@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iterative Process - Founders Factory Tech</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="progress"><div id="progress-fill"></div></div>
+<div id="counter"></div>
+
+<div id="orb-dot"></div>
+<div id="deck">
+
+  <!-- ══ S1 · TITLE ══════════════════════════════════════════════ -->
+  <div class="slide s1">
+    <div class="slide-inner">
+      <img class="orb" style="width:680px;top:-280px;left:-130px;transform:rotate(-12deg);mix-blend-mode:screen" src="orb.png" alt="" />
+      <div class="rules">
+        <div class="rule-v" style="left:604px"></div>
+        <div class="rule-h" style="top:100px"></div>
+      </div>
+      <div class="slide-content">
+        <div class="bottom-left">
+          <div class="s1-eyebrow">Founders Factory · Week 5</div>
+          <div class="s1-title">Tech Development</div>
+        </div>
+        <div class="agenda">
+          <div class="agenda-item">
+            <div class="agenda-icon"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+            <div class="agenda-label">Agile &amp; sprints</div>
+          </div>
+          <div class="agenda-item">
+            <div class="agenda-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+            <div class="agenda-label">Building better and faster</div>
+          </div>
+          <div class="agenda-item">
+            <div class="agenda-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+            <div class="agenda-label">Self-improving companies</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S2 · AGILE & SPRINT DEFINITION ══════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="s2-wrap">
+          <div class="s2-left">
+            <div class="s2-eyebrow">Agile methodology</div>
+            <div class="s2-def">An iterative process develops a project in small increments, with continuous feedback and improvement based on each cycle.</div>
+            <div class="s2-agile-note">Agile relies on this approach - breaking work into defined sprints with clear goals, reviews, and retrospectives at each stage.</div>
+          </div>
+          <div class="s2-right">
+            <div class="sprint-card">
+              <div style="margin-bottom:12px;line-height:0">
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <defs>
+                  <linearGradient id="sprint-cycle-ring" x1="36" y1="34" x2="36" y2="8" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#F3DA41" stop-opacity="0.16"/>
+                    <stop offset="0.52" stop-color="#F3DA41" stop-opacity="0.52"/>
+                    <stop offset="1" stop-color="#F3DA41"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="21" cy="21" r="15" stroke="rgba(243,218,65,0.12)" stroke-width="2.5"/>
+                <path d="M21 6 A15 15 0 1 0 36 21" stroke="url(#sprint-cycle-ring)" stroke-width="2.8" stroke-linecap="round"/>
+                <path d="M31.5 17.5 L36 22 L40.5 17.5" stroke="#F3DA41" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="sprint-kw">Sprint</div>
+              <div class="sprint-def">A short, time-boxed period when a team works to complete a set amount of work.</div>
+              <div class="sprint-sub">Typical duration: 1 week early on → 2 weeks as complexity grows → longer as the product matures.</div>
+            </div>
+          </div>
+        </div>
+        <div class="footnote">As you build, your model learns - every human correction is a labelled training example</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S3 · 2-WEEK SPRINT TIMELINE ═════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="tl-wrap">
+          <div class="tl-slide-label">A 2-week sprint in practice</div>
+          <div class="tl-weeks">
+            <div class="tl-week">
+              <div class="tl-week-label">Week 1</div>
+              <div class="tl-days">
+                <div class="tl-day">Mon</div>
+                <div class="tl-day hi">Tue</div>
+                <div class="tl-day">Wed</div>
+                <div class="tl-day">Thu</div>
+                <div class="tl-day">Fri</div>
+              </div>
+            </div>
+            <div class="tl-week" style="padding-left:16px;border-left:1px solid var(--rule)">
+              <div class="tl-week-label">Week 2</div>
+              <div class="tl-days">
+                <div class="tl-day">Mon</div>
+                <div class="tl-day hi">Tue</div>
+                <div class="tl-day">Wed</div>
+                <div class="tl-day">Thu</div>
+                <div class="tl-day hi">Fri</div>
+              </div>
+            </div>
+          </div>
+          <svg class="tl-svg" viewBox="0 0 912 170" xmlns="http://www.w3.org/2000/svg">
+            <!-- Track -->
+            <rect x="0" y="82" width="912" height="4" rx="2" fill="rgba(255,255,255,0.14)"/>
+            <!-- Daily standups band -->
+            <rect x="120" y="82" width="680" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+            <!-- Standup label -->
+            <text x="460" y="70" text-anchor="middle" dominant-baseline="middle" font-size="10" font-weight="600" letter-spacing="0.12em" fill="rgba(255,255,255,0.62)" font-family="FoundersGrotesk,sans-serif">DAILY STANDUPS · 15 MIN</text>
+
+            <!-- Planning - above track, x=91 (10%) -->
+            <line x1="91" y1="54" x2="91" y2="82" stroke="rgba(255,255,255,0.42)" stroke-width="1"/>
+            <circle cx="91" cy="84" r="9" fill="rgba(243,218,65,0.22)"/>
+            <circle cx="91" cy="84" r="5" fill="#F3DA41"/>
+            <text x="91" y="42" text-anchor="middle" font-size="12.5" font-weight="600" fill="white" font-family="FoundersGrotesk,sans-serif">Planning</text>
+            <rect x="68" y="6" width="46" height="17" rx="4" fill="rgba(243,218,65,0.20)"/>
+            <text x="91" y="19" text-anchor="middle" font-size="9" font-weight="600" fill="#F3DA41" font-family="FoundersGrotesk,sans-serif">1 hr</text>
+
+            <!-- Mid-Sprint Progress - below track, x=502 (55%) -->
+            <line x1="502" y1="86" x2="502" y2="114" stroke="rgba(255,255,255,0.42)" stroke-width="1"/>
+            <circle cx="502" cy="84" r="9" fill="rgba(243,218,65,0.22)"/>
+            <circle cx="502" cy="84" r="5" fill="#F3DA41"/>
+            <text x="502" y="130" text-anchor="middle" font-size="12.5" font-weight="600" fill="white" font-family="FoundersGrotesk,sans-serif">Mid-Sprint Progress</text>
+            <rect x="469" y="138" width="66" height="17" rx="4" fill="rgba(243,218,65,0.20)"/>
+            <text x="502" y="151" text-anchor="middle" font-size="9" font-weight="600" fill="#F3DA41" font-family="FoundersGrotesk,sans-serif">30 min</text>
+
+            <!-- Show & Tell - above track, x=730 (80%) -->
+            <line x1="730" y1="54" x2="730" y2="82" stroke="rgba(255,255,255,0.42)" stroke-width="1"/>
+            <circle cx="730" cy="84" r="9" fill="rgba(243,218,65,0.22)"/>
+            <circle cx="730" cy="84" r="5" fill="#F3DA41"/>
+            <text x="730" y="42" text-anchor="middle" font-size="12.5" font-weight="600" fill="white" font-family="FoundersGrotesk,sans-serif">Show &amp; Tell</text>
+            <rect x="707" y="6" width="46" height="17" rx="4" fill="rgba(243,218,65,0.20)"/>
+            <text x="730" y="19" text-anchor="middle" font-size="9" font-weight="600" fill="#F3DA41" font-family="FoundersGrotesk,sans-serif">1 hr</text>
+
+            <!-- Retrospective - below track, x=866 (95%) -->
+            <line x1="866" y1="86" x2="866" y2="114" stroke="rgba(255,255,255,0.42)" stroke-width="1"/>
+            <circle cx="866" cy="84" r="9" fill="rgba(243,218,65,0.22)"/>
+            <circle cx="866" cy="84" r="5" fill="#F3DA41"/>
+            <text x="866" y="130" text-anchor="middle" font-size="12.5" font-weight="600" fill="white" font-family="FoundersGrotesk,sans-serif">Retrospective</text>
+            <rect x="843" y="138" width="46" height="17" rx="4" fill="rgba(243,218,65,0.20)"/>
+            <text x="866" y="151" text-anchor="middle" font-size="9" font-weight="600" fill="#F3DA41" font-family="FoundersGrotesk,sans-serif">1 hr</text>
+          </svg>
+        </div>
+        <div class="footnote">Sprint ceremonies keep the team aligned, accountable, and improving</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S4 · PLANNING - THREE STEPS ═════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="three-step-header">Planning - what happens?</div>
+        <div class="three-step-wrap">
+          <div class="step-col">
+            <div class="step-num">01 · Document</div>
+            <div class="step-title">Collect your ideas</div>
+            <div class="step-rule"></div>
+            <div class="step-pts">
+              <div class="step-pt">Centralise everything in one place</div>
+              <div class="step-pt">Ensure each idea solves a real customer problem</div>
+              <div class="step-pt">Quantify the magnitude of the problem</div>
+              <div class="step-pt">Start thinking about how you'll measure success</div>
+            </div>
+          </div>
+          <div class="step-col">
+            <div class="step-num">02 · Prioritise</div>
+            <div class="step-title">What delivers most value</div>
+            <div class="step-rule"></div>
+            <div class="step-pts">
+              <div class="step-pt">How big is the opportunity?</div>
+              <div class="step-pt">Has it been validated?</div>
+              <div class="step-pt">How will you measure contribution to wider business goals?</div>
+              <div class="step-pt">Frameworks next slide!</div>
+            </div>
+          </div>
+          <div class="step-col">
+            <div class="step-num">03 · Refine</div>
+            <div class="step-title"><span style="text-decoration:line-through;color:rgba(255,255,255,0.3)">Write the PRD</span><br><span style="font-size:21px;color:var(--accent)">Get AI to write it</span></div>
+            <div class="step-rule"></div>
+            <div class="step-pts">
+              <div class="step-pt">Spar with the model - ask it to challenge you</div>
+              <div class="step-pt">What <em>doesn't</em> change is more important than ever</div>
+              <div class="step-pt">How will AI understand you better next time?</div>
+              <div class="step-pt">Cut the fluff. Make it easy for your team to execute</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S5 · PRIORITISATION FRAMEWORKS ══════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="fw-header">
+          <div class="fw-header-title">Prioritisation frameworks</div>
+        </div>
+        <div class="fw-cards">
+          <div class="fw-card">
+            <div class="fw-formula">ICE Score</div>
+            <div class="fw-diagram">
+              <div class="ice-row">
+                <div class="ice-box"><div class="ice-box-lbl">Impact</div><div class="ice-box-val">7</div></div>
+                <div class="ice-op">×</div>
+                <div class="ice-box"><div class="ice-box-lbl">Confidence</div><div class="ice-box-val">8</div></div>
+                <div class="ice-op">×</div>
+                <div class="ice-box"><div class="ice-box-lbl">Ease</div><div class="ice-box-val">6</div></div>
+                <div class="ice-op">=</div>
+                <div class="ice-result"><div class="ice-result-lbl">Score</div><div class="ice-result-val">336</div></div>
+              </div>
+            </div>
+            <div class="fw-notes">
+              <div class="fw-pt fw-pt-pro"><span class="fw-icon fw-icon-pro"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Quick to calculate - only 3 factors</div>
+              <div class="fw-pt fw-pt-pro"><span class="fw-icon fw-icon-pro"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Structured vs. pure intuition</div>
+              <div class="fw-pt fw-pt-con"><span class="fw-icon fw-icon-con"><svg viewBox="0 0 24 24"><path d="M12 3 22 20H2L12 3z"/><line x1="12" y1="9" x2="12" y2="14"/><circle cx="12" cy="17.5" r="1" fill="currentColor" stroke="none"/></svg></span>Scores are subjective - can embed bias</div>
+              <div class="fw-pt fw-pt-con"><span class="fw-icon fw-icon-con"><svg viewBox="0 0 24 24"><path d="M12 3 22 20H2L12 3z"/><line x1="12" y1="9" x2="12" y2="14"/><circle cx="12" cy="17.5" r="1" fill="currentColor" stroke="none"/></svg></span>Ignores how many users are affected</div>
+            </div>
+          </div>
+          <div class="fw-card">
+            <div class="fw-formula">MoSCoW</div>
+            <div class="fw-diagram">
+              <div class="moscow-grid">
+                <div class="mc mc-must"><div class="mc-lbl">Must</div><div class="mc-desc">Non-negotiable</div></div>
+                <div class="mc mc-should"><div class="mc-lbl">Should</div><div class="mc-desc">High value</div></div>
+                <div class="mc mc-could"><div class="mc-lbl">Could</div><div class="mc-desc">Nice to have</div></div>
+                <div class="mc mc-wont"><div class="mc-lbl">Won't</div><div class="mc-desc">Out of scope</div></div>
+              </div>
+            </div>
+            <div class="fw-notes">
+              <div class="fw-pt fw-pt-pro"><span class="fw-icon fw-icon-pro"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Great for non-technical stakeholders</div>
+              <div class="fw-pt fw-pt-pro"><span class="fw-icon fw-icon-pro"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Communicates release criteria clearly</div>
+              <div class="fw-pt fw-pt-con"><span class="fw-icon fw-icon-con"><svg viewBox="0 0 24 24"><path d="M12 3 22 20H2L12 3z"/><line x1="12" y1="9" x2="12" y2="14"/><circle cx="12" cy="17.5" r="1" fill="currentColor" stroke="none"/></svg></span>Teams overestimate Must-Haves</div>
+              <div class="fw-pt fw-pt-con"><span class="fw-icon fw-icon-con"><svg viewBox="0 0 24 24"><path d="M12 3 22 20H2L12 3z"/><line x1="12" y1="9" x2="12" y2="14"/><circle cx="12" cy="17.5" r="1" fill="currentColor" stroke="none"/></svg></span>More release planning than prioritisation</div>
+            </div>
+          </div>
+          <div class="fw-card">
+            <div class="fw-formula">Risk / Reward</div>
+            <div class="fw-diagram">
+              <svg class="rr-graph" viewBox="0 0 260 140" xmlns="http://www.w3.org/2000/svg" aria-label="Risk vs reward quadrant chart">
+                <defs>
+                  <linearGradient id="rr-sweet" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="rgba(243,218,65,0.22)"/>
+                    <stop offset="100%" stop-color="rgba(243,218,65,0.04)"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Plot area -->
+                <rect x="40" y="8" width="210" height="108" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)"/>
+
+                <!-- Quadrant fills -->
+                <rect x="40"  y="8"  width="105" height="54" fill="rgba(255,255,255,0.025)"/>
+                <rect x="145" y="8"  width="105" height="54" fill="url(#rr-sweet)" stroke="rgba(243,218,65,0.32)" stroke-width="0.75"/>
+                <rect x="40"  y="62" width="105" height="54" fill="rgba(255,255,255,0.015)"/>
+                <rect x="145" y="62" width="105" height="54" fill="rgba(255,255,255,0.025)"/>
+
+                <!-- Grid -->
+                <line x1="145" y1="8"  x2="145" y2="116" stroke="rgba(255,255,255,0.16)" stroke-width="1" stroke-dasharray="4 3"/>
+                <line x1="40"  y1="62" x2="250" y2="62"  stroke="rgba(255,255,255,0.16)" stroke-width="1" stroke-dasharray="4 3"/>
+
+                <!-- Axes -->
+                <line x1="40" y1="116" x2="250" y2="116" stroke="rgba(255,255,255,0.42)" stroke-width="1.5"/>
+                <line x1="40" y1="8"   x2="40"  y2="116" stroke="rgba(255,255,255,0.42)" stroke-width="1.5"/>
+                <polygon points="250,116 243,112.5 243,119.5" fill="rgba(255,255,255,0.42)"/>
+                <polygon points="40,8 36.5,14.5 43.5,14.5" fill="rgba(255,255,255,0.42)"/>
+
+                <!-- Axis labels -->
+                <text x="145" y="128" text-anchor="middle" font-size="12" font-weight="600" letter-spacing="0.1em" fill="rgba(255,255,255,0.82)" font-family="FoundersGrotesk,sans-serif">REWARD →</text>
+                <text x="7" y="62" text-anchor="middle" font-size="12" font-weight="600" letter-spacing="0.1em" fill="rgba(255,255,255,0.82)" font-family="FoundersGrotesk,sans-serif" transform="rotate(-90 7 62)">RISK →</text>
+                <text x="50"  y="130" font-size="11" font-weight="500" fill="rgba(255,255,255,0.62)" font-family="FoundersGrotesk,sans-serif">Low</text>
+                <text x="238" y="130" text-anchor="end" font-size="11" font-weight="500" fill="rgba(255,255,255,0.62)" font-family="FoundersGrotesk,sans-serif">High</text>
+                <text x="20" y="110" text-anchor="middle" font-size="11" font-weight="500" fill="rgba(255,255,255,0.62)" font-family="FoundersGrotesk,sans-serif" transform="rotate(-90 20 110)">Low</text>
+                <text x="20" y="12"  text-anchor="middle" font-size="11" font-weight="500" fill="rgba(255,255,255,0.62)" font-family="FoundersGrotesk,sans-serif" transform="rotate(-90 20 12)">High</text>
+
+                <!-- Quadrant labels -->
+                <text x="92" y="30" text-anchor="middle" font-family="FoundersGrotesk,sans-serif">
+                  <tspan x="92" font-size="13" font-weight="600" fill="rgba(255,255,255,0.88)">Low reward</tspan>
+                  <tspan x="92" dy="16" font-size="12" font-weight="500" fill="rgba(255,255,255,0.68)">Low risk</tspan>
+                </text>
+                <text x="197" y="28" text-anchor="middle" font-family="FoundersGrotesk,sans-serif">
+                  <tspan x="197" font-size="14" font-weight="600" fill="#F3DA41">High reward</tspan>
+                  <tspan x="197" dy="16" font-size="12" font-weight="600" fill="rgba(243,218,65,0.95)">Low risk ✦</tspan>
+                </text>
+                <text x="92" y="84" text-anchor="middle" font-family="FoundersGrotesk,sans-serif">
+                  <tspan x="92" font-size="13" font-weight="600" fill="rgba(255,255,255,0.88)">Low reward</tspan>
+                  <tspan x="92" dy="16" font-size="12" font-weight="500" fill="rgba(255,255,255,0.68)">High risk</tspan>
+                </text>
+                <text x="197" y="84" text-anchor="middle" font-family="FoundersGrotesk,sans-serif">
+                  <tspan x="197" font-size="13" font-weight="600" fill="rgba(255,255,255,0.88)">High reward</tspan>
+                  <tspan x="197" dy="16" font-size="12" font-weight="500" fill="rgba(255,255,255,0.68)">High risk</tspan>
+                </text>
+              </svg>
+            </div>
+            <div class="fw-notes">
+              <div class="fw-pt fw-pt-pro"><span class="fw-icon fw-icon-pro"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Optimises reward-to-risk ratio</div>
+              <div class="fw-pt fw-pt-pro"><span class="fw-icon fw-icon-pro"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Reduces impulsive decision-making</div>
+              <div class="fw-pt fw-pt-con"><span class="fw-icon fw-icon-con"><svg viewBox="0 0 24 24"><path d="M12 3 22 20H2L12 3z"/><line x1="12" y1="9" x2="12" y2="14"/><circle cx="12" cy="17.5" r="1" fill="currentColor" stroke="none"/></svg></span>Estimating risk accurately is hard</div>
+              <div class="fw-pt fw-pt-con"><span class="fw-icon fw-icon-con"><svg viewBox="0 0 24 24"><path d="M12 3 22 20H2L12 3z"/><line x1="12" y1="9" x2="12" y2="14"/><circle cx="12" cy="17.5" r="1" fill="currentColor" stroke="none"/></svg></span>Can favour short-term over long-term</div>
+            </div>
+          </div>
+        </div>
+        <div class="footnote">No single method is perfect - the goal is to avoid the biggest mistakes</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S6 · PRIORITISATION PRINCIPLES ══════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="principles-wrap">
+          <div class="principles-eyebrow">How to use these frameworks</div>
+          <div class="principle">
+            <div class="principle-n">01</div>
+            <div class="principle-body">
+              <div class="principle-title">Start with the simplest tool</div>
+              <div class="principle-detail">ICE is fast to apply. You can always refine as the team grows - don't over-engineer the process before you need to.</div>
+            </div>
+          </div>
+          <div class="principle">
+            <div class="principle-n">02</div>
+            <div class="principle-body">
+              <div class="principle-title">Prioritisation evolves with the company</div>
+              <div class="principle-detail">Early stage → prioritise learning. Later → switch to more structured methods like RICE or OKR-tied scoring.</div>
+            </div>
+          </div>
+          <div class="principle">
+            <div class="principle-n">03</div>
+            <div class="principle-body">
+              <div class="principle-title">AI is pretty good at ICE and RICE</div>
+              <div class="principle-detail">Once it has good context at least...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S7a · STANDUP ════════════════════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="cer-page-title">Stand up &#x2014; what happens in a Standup?</div>
+        <div class="cer-page-body">
+          <div class="cer-page-left">
+            <div class="cer-page-step">
+              <div class="cer-page-label">Done Yesterday</div>
+              <div class="cer-page-val">Each member quickly shares what they&#x2019;ve done</div>
+            </div>
+            <div class="cer-page-step">
+              <div class="cer-page-label">Today</div>
+              <div class="cer-page-val">Quickly share what you&#x2019;ll do today</div>
+            </div>
+            <div class="cer-page-step">
+              <div class="cer-page-label">Blocked</div>
+              <div class="cer-page-val">Share what&#x2019;s blocking you and unblock each other</div>
+            </div>
+          </div>
+          <div class="cer-page-right">
+            <div class="cer-page-diagram">
+              <img src="sprint-standup.png" alt="Standup" class="standup-img">
+            </div>
+          </div>
+        </div>
+        <div class="footnote">15 min · every day · keeps the team aligned and unblocked</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S7b · RETROSPECTIVE ═══════════════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="cer-page-title">Retrospective &#x2014; what happens in &#x201C;Retro&#x201D;?</div>
+        <div class="cer-page-body">
+          <div class="cer-page-left">
+            <div class="cer-page-step">
+              <div class="cer-page-label">Start</div>
+              <div class="cer-page-val">Share what you want to do differently</div>
+            </div>
+            <div class="cer-page-step">
+              <div class="cer-page-label">Stop</div>
+              <div class="cer-page-val">Share what we should stop doing</div>
+            </div>
+            <div class="cer-page-step">
+              <div class="cer-page-label">Continue</div>
+              <div class="cer-page-val">Share what worked well</div>
+            </div>
+          </div>
+          <div class="cer-page-right">
+            <div class="cer-page-diagram">
+              <img src="sprint-retro.jpg" alt="Retro" class="retro-img">
+            </div>
+          </div>
+        </div>
+        <div class="footnote">1 hr · end of sprint · surface what to change, drop, and keep</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S7c · SHOW &amp; TELL ═══════════════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="cer-page-title">Show &amp; Tell &#x2014; what happens in Show &amp; Tell?</div>
+        <div class="cer-page-body">
+          <div class="cer-page-left">
+            <div class="cer-page-step">
+              <div class="cer-page-label">Show</div>
+              <div class="cer-page-val">Show a demo of what you&#x2019;ve done</div>
+            </div>
+            <div class="cer-page-step">
+              <div class="cer-page-label">Tell</div>
+              <div class="cer-page-val">Talk about the impact it had</div>
+            </div>
+            <div class="cer-page-step">
+              <div class="cer-page-label">Answer</div>
+              <div class="cer-page-val">Answer any questions</div>
+            </div>
+          </div>
+          <div class="cer-page-right">
+            <div class="cer-page-diagram">
+              <img src="sprint-demo.gif" alt="Show & Tell" class="show-tell-img">
+            </div>
+          </div>
+        </div>
+        <div class="footnote">1 hr · end of sprint · demo what shipped and what moved the needle</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S8 · SPRINT PITFALLS ═════════════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="pitfalls-header">Sprint pitfalls &amp; tips</div>
+        <div class="two-col-list">
+          <div class="two-col-row">
+            <div class="col-left"><span class="col-icon icon-x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Missing product requirements</div>
+            <div class="col-arrow">→</div>
+            <div class="col-right"><span class="col-icon icon-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Write clear, detailed PRDs</div>
+          </div>
+          <div class="two-col-row">
+            <div class="col-left"><span class="col-icon icon-x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>No success metrics defined</div>
+            <div class="col-arrow">→</div>
+            <div class="col-right"><span class="col-icon icon-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Know what you're measuring first</div>
+          </div>
+          <div class="two-col-row">
+            <div class="col-left"><span class="col-icon icon-x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Ignoring unexpected events</div>
+            <div class="col-arrow">→</div>
+            <div class="col-right"><span class="col-icon icon-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Welcome urgent work when appropriate</div>
+          </div>
+          <div class="two-col-row">
+            <div class="col-left"><span class="col-icon icon-x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Overcommitting each sprint</div>
+            <div class="col-arrow">→</div>
+            <div class="col-right"><span class="col-icon icon-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Account for tech debt &amp; contingency</div>
+          </div>
+          <div class="two-col-row">
+            <div class="col-left"><span class="col-icon icon-x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Not documenting sprints</div>
+            <div class="col-arrow">→</div>
+            <div class="col-right"><span class="col-icon icon-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Track your learnings every cycle</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S9 · SECTION - BUILD ══════════════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="rules">
+        <div class="rule-h" style="top:38%"></div>
+      </div>
+      <div class="slide-content">
+        <div class="sec-div-wrap">
+          <div class="sec-div-eyebrow">Product → Build</div>
+          <div class="sec-div-title">Hacky<br>Building</div>
+          <div class="sec-div-sub">We build to validate assumptions and generate signal - every human override is a labelled training example your competitors don't have.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S10 · TWO APPROACHES TO VALUE ═══════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="two-graphs-wrap">
+          <div class="graph-panel">
+            <div class="graph-type">Approach A</div>
+            <div class="graph-title">Busy building<br>then launch</div>
+            <div class="graph-desc">Long build phases deliver value all at once - high risk if assumptions are wrong.</div>
+            <div class="graph-svg-wrap">
+              <svg viewBox="0 0 240 140" width="100%" style="overflow:visible">
+                <defs>
+                  <linearGradient id="ga" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="rgba(255,255,255,0.12)"/>
+                    <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+                  </linearGradient>
+                </defs>
+                <line x1="24" y1="116" x2="224" y2="116" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <line x1="24" y1="20" x2="24" y2="116" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <text x="124" y="132" font-size="9" fill="rgba(255,255,255,0.35)" text-anchor="middle" font-family="FoundersGrotesk, sans-serif">Time</text>
+                <text x="8" y="68" font-size="9" fill="rgba(255,255,255,0.35)" text-anchor="middle" transform="rotate(-90,8,68)" font-family="FoundersGrotesk, sans-serif">Value</text>
+                <path d="M24,112 L160,108 L163,28 L224,24 L224,116 Z" fill="url(#ga)"/>
+                <polyline points="24,112 160,108 163,28 224,24" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2.5" stroke-linejoin="round"/>
+                <circle cx="163" cy="28" r="4" fill="var(--accent)"/>
+                <text x="170" y="26" font-size="9" fill="var(--accent)" font-family="FoundersGrotesk, sans-serif" font-weight="600">Launch</text>
+                <text x="78" y="106" font-size="9" fill="rgba(255,255,255,0.3)" font-family="FoundersGrotesk, sans-serif">Busy building</text>
+              </svg>
+            </div>
+          </div>
+          <div class="graph-panel">
+            <div class="graph-type">Approach B</div>
+            <div class="graph-title">Incremental<br>value delivery</div>
+            <div class="graph-desc">Releases at each milestone - faster feedback, more points to learn and adapt.</div>
+            <div class="graph-svg-wrap">
+              <svg viewBox="0 0 240 140" width="100%" style="overflow:visible">
+                <defs>
+                  <linearGradient id="gb" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="rgba(255,255,255,0.12)"/>
+                    <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+                  </linearGradient>
+                </defs>
+                <line x1="24" y1="116" x2="224" y2="116" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <line x1="24" y1="20" x2="24" y2="116" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <text x="124" y="132" font-size="9" fill="rgba(255,255,255,0.35)" text-anchor="middle" font-family="FoundersGrotesk, sans-serif">Time</text>
+                <text x="8" y="68" font-size="9" fill="rgba(255,255,255,0.35)" text-anchor="middle" transform="rotate(-90,8,68)" font-family="FoundersGrotesk, sans-serif">Value</text>
+                <path d="M24,112 L70,112 L70,88 L116,88 L116,62 L162,62 L162,36 L224,36 L224,116 Z" fill="url(#gb)"/>
+                <polyline points="24,112 70,112 70,88 116,88 116,62 162,62 162,36 224,36" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2.5" stroke-linejoin="round"/>
+                <circle cx="70" cy="88" r="4" fill="var(--accent)"/><circle cx="116" cy="62" r="4" fill="var(--accent)"/><circle cx="162" cy="36" r="4" fill="var(--accent)"/>
+                <text x="47" y="128" font-size="8.5" fill="rgba(255,255,255,0.3)" text-anchor="middle" font-family="FoundersGrotesk, sans-serif">Sprint 1</text>
+                <text x="93" y="128" font-size="8.5" fill="rgba(255,255,255,0.3)" text-anchor="middle" font-family="FoundersGrotesk, sans-serif">Sprint 2</text>
+                <text x="139" y="128" font-size="8.5" fill="rgba(255,255,255,0.3)" text-anchor="middle" font-family="FoundersGrotesk, sans-serif">Sprint 3</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S11 · LAYERS IN BUILD ═════════════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="layers-bubble-map">
+          <div class="bubble bubble-core">Complex secret<br>sauce - what’s<br>being invested in?</div>
+          <div class="bubble bubble-code">Strings files,<br>LLM prompts,<br>superparams</div>
+          <div class="bubble bubble-vendor">Vendor x</div>
+          <div class="bubble bubble-package">Package y</div>
+          <div class="bubble bubble-genai">GenAI-built<br>component z</div>
+          <div class="bubble bubble-nocode">No-code<br>dashboards,<br>Node-RED<br>controllers</div>
+          <div class="bubble bubble-ghost bubble-ghost-a"></div>
+          <div class="bubble bubble-ghost bubble-ghost-b"></div>
+          <div class="bubble bubble-ghost bubble-ghost-c"></div>
+          <div class="bubble bubble-ghost bubble-ghost-d"></div>
+          <div class="bubble bubble-ghost bubble-ghost-e"></div>
+          <div class="bubble bubble-ghost bubble-ghost-f"></div>
+
+          <div class="bubble-note bubble-note-top">Maximise<br>time here</div>
+          <div class="bubble-note bubble-note-left">Enabling<br>non-technical staff<br>to work on these</div>
+          <svg class="bubble-arrows" viewBox="0 0 920 420" aria-hidden="true">
+            <defs>
+              <marker id="bubble-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+                <path d="M0,0 L8,4 L0,8" fill="rgba(255,255,255,0.70)"/>
+              </marker>
+            </defs>
+            <path d="M320 74 C352 70 378 78 397 103" fill="none" stroke="rgba(255,255,255,0.70)" stroke-width="2" stroke-linecap="round" marker-end="url(#bubble-arrow)"/>
+            <path d="M110 260 C165 260 205 232 240 200" fill="none" stroke="rgba(255,255,255,0.70)" stroke-width="2" stroke-linecap="round" marker-end="url(#bubble-arrow)"/>
+          </svg>
+        </div>
+        <div class="footnote">The goal is to invest in the proprietary layer - everything else can be bought, generated, or delegated</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S12 · WHAT IS SECRET SAUCE? ═══════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="sauce-wrap">
+          <div class="sauce-header">
+            <div class="sauce-eyebrow">Complex secret sauce</div>
+            <div class="sauce-title">What is secret sauce?</div>
+            <div class="sauce-sub">The specific hard-to-copy asset that makes investors believe the company can compound faster than competitors.</div>
+          </div>
+          <div class="sauce-grid">
+            <div class="sauce-card">
+              <div class="sauce-image-slot">Image</div>
+              <div class="sauce-domain">Pictura Bio</div>
+              <div class="sauce-example">A patented universal pathogen label plus a growing clinical image dataset - every new sample makes the diagnostic model harder to copy.</div>
+            </div>
+            <div class="sauce-card">
+              <div class="sauce-image-slot">Image</div>
+              <div class="sauce-domain">Sereact</div>
+              <div class="sauce-example">A live robot fleet producing real manipulation data at scale - the data moat behind a general-purpose robotic brain.</div>
+            </div>
+            <div class="sauce-card">
+              <div class="sauce-image-slot">Image</div>
+              <div class="sauce-domain">Fairmat</div>
+              <div class="sauce-example">A replicable automated factory plus patented cold-plasma recycling - turning messy carbon-fibre waste into qualified industrial material.</div>
+            </div>
+          </div>
+          <div class="sauce-bottom">VCs love the loop: proprietary process → scarce data → better product → more data.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S13 · BUILD SHORTCUTS ═════════════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="shortcuts-title">A few shortcuts...</div>
+        <div class="shortcuts-map">
+          <div class="shortcut-bubble sb-cursor"><span class="shortcut-logo"><img src="logos/cursor-logo.svg" alt="Cursor"></span><span>Vibe<br>coding</span></div>
+          <div class="shortcut-bubble sb-zapier"><span class="shortcut-logo"><img src="logos/zapier.svg" alt="Zapier"></span><span>No/low-code<br>automation</span></div>
+          <div class="shortcut-bubble sb-n8n"><span class="shortcut-logo"><img src="logos/n8n-logo.svg" alt="n8n"></span><span>Expose AI<br>agents in n8n</span></div>
+          <div class="shortcut-bubble sb-stitch"><span class="shortcut-logo"><img src="logos/stitch-logo.svg" alt="Stitch"></span><span>GenAI UI<br>design</span></div>
+          <div class="shortcut-bubble sb-db"><span class="shortcut-logo shortcut-logo-stack"><img src="logos/supabase-logo.svg" alt="Supabase"><img src="logos/vercel.svg" alt="Vercel"></span><span>PoC db &amp;<br>deployments</span></div>
+          <div class="shortcut-bubble sb-concierge"><span class="shortcut-logo" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="9" r="5" stroke="currentColor" stroke-width="2.2"/><path d="M6.5 25c1.4-5 4.2-7.5 8.5-7.5s7.1 2.5 8.5 7.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span><span>Concierge<br>prototypes</span></div>
+          <div class="shortcut-bubble sb-workers"><span class="shortcut-logo"><img src="logos/cloudflare-workers-logo.svg" alt="Cloudflare Workers"></span><span>LLM prompts,<br>superparams<br>on edge</span></div>
+          <div class="shortcut-bubble sb-budibase"><span class="shortcut-logo"><img src="logos/budibase-logo.svg" alt="Budibase"></span><span>No-code DB<br>automation</span></div>
+          <div class="shortcut-bubble sb-modulr"><span class="shortcut-logo"><img src="logos/modulr-logo.svg" alt="Modulr"></span><span>Embedded<br>regulated<br>features</span></div>
+          <div class="shortcut-bubble sb-edito"><span class="shortcut-logo"><img src="logos/edito-logo.svg" alt="EDITO"></span><span>Digital twin<br>vendors</span></div>
+          <div class="shortcut-bubble sb-oxford"><span class="shortcut-logo"><img src="logos/university-of-oxford-logo.svg" alt="University of Oxford"></span><span>Regulatory<br>templates for<br>devices</span></div>
+          <div class="shortcut-bubble sb-pcb"><span class="shortcut-logo shortcut-logo-stack"><img src="logos/embedded-logo.svg" alt="embedd"><img src="logos/flux-logo.svg" alt="Flux"></span><span>GenAI PCB<br>design &amp; test</span></div>
+          <div class="shortcut-bubble sb-gui"><span class="shortcut-logo shortcut-logo-stack"><img src="logos/blokdots-logo.svg" alt="blokdots"><img src="logos/crank-logo.svg" alt="CRANK"></span><span>No-code<br>embedded GUI</span></div>
+          <div class="shortcut-bubble sb-fusion"><span class="shortcut-logo shortcut-logo-stack"><img src="logos/autodesk-fusion-logo.svg" alt="Autodesk Fusion"><img src="logos/grasshopper-logo.svg" alt="Grasshopper"></span><span>GenAI<br>part design</span></div>
+          <div class="shortcut-bubble sb-iot"><span class="shortcut-logo"><img src="logos/amazon-monitron-logo.svg" alt="Amazon Monitron"></span><span>Pre-packaged<br>IoT</span></div>
+
+          <div class="shortcut-ghost sg-a"></div>
+          <div class="shortcut-ghost sg-b"></div>
+          <div class="shortcut-ghost sg-c"></div>
+          <div class="shortcut-ghost sg-d"></div>
+          <div class="shortcut-ghost sg-e"></div>
+          <div class="shortcut-ghost sg-f"></div>
+          <div class="shortcut-ghost sg-g"></div>
+
+          <div class="shortcut-axis">
+            <div class="shortcut-axis-line"></div>
+            <div class="shortcut-axis-arrow"></div>
+            <div class="shortcut-axis-label">Software startups → Hardware startups</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S13 · SECTION - DATA ══════════════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="rules">
+        <div class="rule-h" style="top:42%"></div>
+      </div>
+      <div class="slide-content">
+        <div class="sec-div-wrap">
+          <div class="sec-div-eyebrow">Product &amp; Tech</div>
+          <div class="sec-div-title">Data<br>Management</div>
+          <div class="sec-div-sub">Your data flywheel is the gap between what your model predicts and what your experts actually do. Log it, retrain on it - and watch predictions converge on human judgement.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S14 · DATA MANAGEMENT CYCLE ══════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="data-cycle-wrap">
+          <div class="data-cycle-header">The AI data flywheel</div>
+          <div class="data-cycle-grid">
+            <div class="data-step">
+              <div class="data-step-n">01</div>
+              <div class="data-step-title">Define the delta</div>
+              <div class="data-step-body">Where does your model diverge from what human experts actually do? That gap - override rate, edit rate, correction frequency - is your objective.</div>
+            </div>
+            <div class="flow-arr">→</div>
+            <div class="data-step">
+              <div class="data-step-n">02</div>
+              <div class="data-step-title">Target convergence</div>
+              <div class="data-step-body">What does closing the gap look like? Set a measurable convergence signal - e.g. override rate drops from 40% to under 10%.</div>
+            </div>
+            <div class="flow-arr">→</div>
+            <div class="data-step">
+              <div class="data-step-n">03</div>
+              <div class="data-step-title">Assess current state</div>
+              <div class="data-step-body">Where is data today? Constraints: hosting, streaming, tooling, regulations.</div>
+            </div>
+            <div class="data-step">
+              <div class="data-step-n">04</div>
+              <div class="data-step-title">Log the delta</div>
+              <div class="data-step-body">Every prediction a human overrides or corrects is a labelled training example. Design your system to capture these disagreements automatically.</div>
+            </div>
+            <div class="flow-arr">→</div>
+            <div class="data-step">
+              <div class="data-step-n">05</div>
+              <div class="data-step-title">Retrain on disagreements</div>
+              <div class="data-step-body">Use the gap between model output and human action as your training set. Weekly retraining cycles compound improvements without anyone manually labelling data.</div>
+            </div>
+            <div class="flow-arr">→</div>
+            <div class="data-step" style="background:rgba(243,218,65,0.05);border-color:rgba(243,218,65,0.15)">
+              <div class="data-step-n">→</div>
+              <div class="data-step-title">Delta shrinks</div>
+              <div class="data-step-body">Model output converges on expert judgement. Each retraining cycle compounds your moat - not just speed, but accumulated domain knowledge no competitor can buy.</div>
+            </div>
+          </div>
+        </div>
+        <div class="footnote">The flywheel compounds - each human correction today makes tomorrow's model smarter than any competitor who isn't collecting this signal</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S15 · SMART GOALS - ANNOTATED ════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="annotated-wrap">
+          <div class="annotated-eyebrow">Setting a great goal - example</div>
+          <div class="annotated-goal">
+            "Can my drone's pest model close the gap with agronomist judgement - reducing expert overrides from <mark>40% to below 10%</mark> of predictions by <mark>retraining weekly</mark> on corrected field data over the <mark>next three months</mark>?"
+          </div>
+          <div class="annotation-chips">
+            <span class="annotation-chip">Delta target</span>
+            <span class="annotation-chip">Convergence signal</span>
+            <span class="annotation-chip">Retraining cadence</span>
+            <span class="annotation-chip">Time-bound</span>
+            <span class="annotation-chip">Expert-model gap</span>
+          </div>
+        </div>
+        <div class="footnote">Data management - setting goals</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S16 · DATA ACCELERATION ═══════════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="dataacc-wrap">
+          <div class="dataacc-title">Making data faster</div>
+          <div class="dataacc-grid">
+            <div class="dataacc-card">
+              <div class="dataacc-label">Data Warehouses</div>
+              <div class="dataacc-card-title">One home for all sources</div>
+              <div class="dataacc-body">Start small - scale collection as understanding grows. Well-integrated space across multiple data sources.</div>
+              <div class="dataacc-tools"><span class="dataacc-tool">Snowflake</span><span class="dataacc-tool">BigQuery</span></div>
+            </div>
+            <div class="dataacc-card">
+              <div class="dataacc-label">Pipelines</div>
+              <div class="dataacc-card-title">Move data without code</div>
+              <div class="dataacc-body">Data scattered across services? Move it between systems automatically - no engineering required.</div>
+              <div class="dataacc-tools"><span class="dataacc-tool">Fivetran</span><span class="dataacc-tool">Palantir Foundry</span></div>
+            </div>
+            <div class="dataacc-card">
+              <div class="dataacc-label">Retraining loops</div>
+              <div class="dataacc-card-title">Close the gap automatically</div>
+              <div class="dataacc-body">Log every human override and correction as structured signal. Weekly retraining on these deltas closes the model-expert gap without anyone labelling data manually.</div>
+              <div class="dataacc-tools"><span class="dataacc-tool">Dispatch</span><span class="dataacc-tool">Fine-tuning</span><span class="dataacc-tool">RLHF</span></div>
+            </div>
+            <div class="dataacc-card">
+              <div class="dataacc-label">Free Help</div>
+              <div class="dataacc-card-title">Cloud providers build for you</div>
+              <div class="dataacc-body">Google, Amazon, and Azure offer free solutions engineering if they anticipate a significant AI spend down the line.</div>
+              <div class="dataacc-tools"><span class="dataacc-tool">AWS</span><span class="dataacc-tool">GCP</span><span class="dataacc-tool">Azure</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S17 · TECH DECISION CHART ═══════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="chart-svg-fade">
+          <svg viewBox="0 0 1024 576" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;">
+            <!-- Speed fill area -->
+            <path d="M 65,382 C 95,382 180,82 255,118 C 325,150 385,264 450,270 C 525,276 600,382 642,382 C 698,382 748,380 762,380 L 762,382 L 65,382 Z" fill="rgba(155,135,0,0.22)"/>
+            <!-- Cost per user (back layer) -->
+            <path d="M 65,382 C 140,382 225,378 255,376 C 330,374 406,360 450,357 C 532,354 592,320 642,317 C 702,314 750,272 762,270" fill="none" stroke="#52B88A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Maintenance -->
+            <path d="M 65,382 C 140,382 225,376 255,374 C 330,372 406,350 450,347 C 532,344 592,297 642,292 C 702,287 750,204 762,202" fill="none" stroke="#78C96A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Functionality -->
+            <path d="M 65,382 C 140,382 225,379 255,377 C 330,375 406,347 450,340 C 532,333 592,220 642,212 C 702,204 750,140 762,130" fill="none" stroke="#9E80D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Scalability & dependence -->
+            <path d="M 65,382 C 140,382 222,380 255,377 C 330,374 402,357 450,347 C 532,337 592,230 642,214 C 702,198 752,70 762,57" fill="none" stroke="#E07B5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Team familiarity -->
+            <path d="M 65,212 C 128,207 192,194 255,198 C 332,202 392,227 450,230 C 532,233 592,270 642,272 C 702,274 748,296 762,296" fill="none" stroke="#7B9BD8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Speed line (top) -->
+            <path d="M 65,382 C 95,382 180,82 255,118 C 325,150 385,264 450,270 C 525,276 600,382 642,382 C 698,382 748,380 762,380" fill="none" stroke="#F3DA41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- X axis -->
+            <line x1="65" y1="384" x2="762" y2="384" stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
+            <circle cx="65" cy="384" r="5" fill="#0b1a14" stroke="rgba(255,255,255,0.42)" stroke-width="1.5"/>
+            <circle cx="762" cy="384" r="5" fill="#0b1a14" stroke="rgba(255,255,255,0.42)" stroke-width="1.5"/>
+            <!-- Stage labels -->
+            <text x="65" y="402" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.42)" font-family="FoundersGrotesk,sans-serif">PoC</text>
+            <text x="255" y="402" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.42)" font-family="FoundersGrotesk,sans-serif">Rapid Prototyping</text>
+            <text x="450" y="402" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.42)" font-family="FoundersGrotesk,sans-serif">MVP</text>
+            <text x="642" y="402" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.42)" font-family="FoundersGrotesk,sans-serif">Refined Launch</text>
+            <text x="762" y="402" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.42)" font-family="FoundersGrotesk,sans-serif">Scale</text>
+            <!-- Speed chip (solid yellow) -->
+            <rect x="218" y="87" width="64" height="22" rx="4" fill="#F3DA41"/>
+            <text x="250" y="102" text-anchor="middle" font-size="10.5" font-weight="600" fill="#181200" font-family="FoundersGrotesk,sans-serif">Speed</text>
+            <!-- Team familiarity chip -->
+            <rect x="68" y="188" width="116" height="20" rx="10" fill="none" stroke="#7B9BD8" stroke-width="1"/>
+            <text x="126" y="202" text-anchor="middle" font-size="9.5" fill="#7B9BD8" font-family="FoundersGrotesk,sans-serif">Team familiarity</text>
+            <!-- Scalability chip -->
+            <rect x="776" y="45" width="205" height="22" rx="4" fill="none" stroke="#E07B5A" stroke-width="1"/>
+            <text x="878" y="60" text-anchor="middle" font-size="9.5" fill="#E07B5A" font-family="FoundersGrotesk,sans-serif">Scalability &amp; dependence</text>
+            <!-- Functionality chip -->
+            <rect x="776" y="118" width="108" height="22" rx="4" fill="none" stroke="#9E80D4" stroke-width="1"/>
+            <text x="830" y="133" text-anchor="middle" font-size="9.5" fill="#9E80D4" font-family="FoundersGrotesk,sans-serif">Functionality</text>
+            <!-- Maintenance chip -->
+            <rect x="776" y="190" width="108" height="22" rx="4" fill="none" stroke="#78C96A" stroke-width="1"/>
+            <text x="830" y="205" text-anchor="middle" font-size="9.5" fill="#78C96A" font-family="FoundersGrotesk,sans-serif">Maintenance</text>
+            <!-- Cost per user chip -->
+            <rect x="776" y="258" width="108" height="22" rx="4" fill="none" stroke="#52B88A" stroke-width="1"/>
+            <text x="830" y="273" text-anchor="middle" font-size="9.5" fill="#52B88A" font-family="FoundersGrotesk,sans-serif">Cost per user</text>
+          </svg>
+        </div>
+        <div class="chart-title-block">
+          <div class="chart-eyebrow">Different priorities over time</div>
+          <div class="chart-main-title">Making the right tech decision</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S18 · TEAM PITFALLS ════════════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <img class="orb" style="width:520px;top:-80px;right:-80px;mix-blend-mode:screen;" src="orb.png" alt="" />
+      <div class="slide-content">
+        <div class="tp-header">
+          <div class="tp-eyebrow">Getting Tactical</div>
+          <div class="tp-title">Team pitfalls</div>
+        </div>
+        <div class="tp-rule"></div>
+        <div class="tp-cols">
+          <div class="tp-col">
+            <div class="tp-col-title">Small &amp; senior</div>
+            <div class="tp-col-text">Larger, junior teams are harder to pivot and take time to manage</div>
+          </div>
+          <div class="tp-col">
+            <div class="tp-col-title">Retros</div>
+            <div class="tp-col-text">Iron out your differences early on, and continue to adapt</div>
+          </div>
+          <div class="tp-col">
+            <div class="tp-col-title">Decoupling</div>
+            <div class="tp-col-text">Breaking down teams or technologies too early</div>
+          </div>
+          <div class="tp-col">
+            <div class="tp-col-title">CEO-led feedback</div>
+            <div class="tp-col-text">As the CTO, am I stifling innovation by saying no?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S19 · REGULATION ═══════════════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="regs-wrap">
+          <div class="regs-eyebrow">Getting Tactical</div>
+          <div class="regs-title">Regulation</div>
+          <div class="regs-cols">
+            <!-- Anticipate -->
+            <div class="regs-col">
+              <div class="regs-icon">
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="20" y="5" width="26" height="33" rx="2" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                  <rect x="8" y="13" width="26" height="33" rx="2" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                  <line x1="14" y1="23" x2="28" y2="23" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+                  <line x1="14" y1="29" x2="28" y2="29" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+                  <line x1="14" y1="35" x2="22" y2="35" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="regs-col-title">Anticipate</div>
+              <div class="regs-col-text">Investigate regulation in your space early to avoid roadmap changes down the line</div>
+              <div class="regs-bullets">
+                <div class="regs-bullet">Other founders</div>
+                <div class="regs-bullet">Friendly compliance teams</div>
+                <div class="regs-bullet">Academics</div>
+                <div class="regs-bullet">Industry advisory committees</div>
+              </div>
+            </div>
+            <!-- Focus -->
+            <div class="regs-col">
+              <div class="regs-icon">
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="27" cy="27" r="21" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                  <line x1="27" y1="10" x2="27" y2="44" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+                  <line x1="10" y1="27" x2="44" y2="27" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+                  <line x1="15" y1="15" x2="39" y2="39" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+                  <line x1="39" y1="15" x2="15" y2="39" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="regs-col-title">Focus</div>
+              <div class="regs-col-text">Industries typically have focal areas of regulation:</div>
+              <div class="regs-bullets">
+                <div class="regs-bullet"><strong>Mining:</strong> health &amp; safety, social capital, permits</div>
+                <div class="regs-bullet"><strong>Health:</strong> personal data protection, clinical pilot gates</div>
+                <div class="regs-bullet"><strong>Climate:</strong> reporting, more permits</div>
+              </div>
+            </div>
+            <!-- Play down -->
+            <div class="regs-col">
+              <div class="regs-icon">
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="18" r="8" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                  <path d="M 4 46 C 4 36 11 30 20 30 C 29 30 36 36 36 46" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+                  <circle cx="35" cy="16" r="7" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                  <path d="M 23 46 C 23 38 29 32 35 32 C 43 32 50 38 50 46" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="regs-col-title">Play down</div>
+              <div class="regs-col-text">Compliance stakeholders often list 900 items, of which you only actually need to complete two to get moving</div>
+              <div class="regs-bullets">
+                <div class="regs-bullet">E.g. running a SAQ-D in fintech</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /deck -->
+
+<script>
+  // Scale all slide-inner elements to fill viewport at 16:9
+  function scaleSlides() {
+    const s = Math.min(window.innerWidth / 1024, window.innerHeight / 576);
+    document.querySelectorAll('.slide-inner').forEach(el => el.style.setProperty('--s', s));
+  }
+  window.addEventListener('resize', scaleSlides);
+  scaleSlides();
+
+  // Lazy-load via IntersectionObserver
+  const deck   = document.getElementById('deck');
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  let cur = 0;
+
+  function hud() {
+    const pct = ((cur + 1) / slides.length * 100).toFixed(1);
+    document.getElementById('progress-fill').style.width = pct + '%';
+    document.getElementById('counter').textContent = (cur + 1) + ' / ' + slides.length;
+  }
+  hud();
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        cur = slides.indexOf(e.target);
+        hud();
+      }
+    });
+  }, { root: deck, threshold: 0.5 });
+
+  slides.forEach(s => observer.observe(s));
+
+  // Keyboard navigation
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') {
+      e.preventDefault();
+      if (cur < slides.length - 1) slides[cur + 1].scrollIntoView({ behavior: 'smooth' });
+    }
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (cur > 0) slides[cur - 1].scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+</script>
+</body>
+</html>

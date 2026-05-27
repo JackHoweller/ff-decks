@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/jackhowell/Downloads/ff-masterclass-deck/.claude)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(mkdir -p /Users/jackhowell/.claude/projects/-Users-jackhowell-Downloads-ff-masterclass-deck/memory)",
+      "Bash(cat)",
+      "Bash(python3 /tmp/apply_glass.py)"
+    ]
+  }
+}
