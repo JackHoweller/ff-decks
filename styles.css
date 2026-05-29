@@ -1051,28 +1051,104 @@
     .slide.visible .goals-heading { opacity:1; transform:none; }
     .goals-rule-h { position:absolute; top:98px; left:52px; right:52px; height:1px; background:var(--rule); opacity:0; transition:opacity 0.4s ease 0.4s; }
     .slide.visible .goals-rule-h { opacity:1; }
-    /* Goal question */
-    .goals-q-wrap { position:absolute; left:52px; right:52px; top:148px; opacity:0; transition:opacity 0.55s ease 0.46s; }
+    /* Goal question — centred with hand-annotated callouts */
+    .goals-q-wrap { position:absolute; left:140px; right:140px; top:300px; display:flex; align-items:flex-start; gap:14px; opacity:0; transition:opacity 0.55s ease 0.46s; }
     .slide.visible .goals-q-wrap { opacity:1; }
-    .goals-q { font-family:'FoundersGrotesk',sans-serif; font-size:25px; font-weight:400; line-height:1.6; color:rgba(255,255,255,0.92); }
+    .goals-q-num { font-family:'FoundersGrotesk',sans-serif; font-size:14px; font-weight:400; line-height:1.6; color:var(--muted); flex-shrink:0; padding-top:2px; }
+    .goals-q-lines { flex:1; }
+    .goals-q { font-family:'FoundersGrotesk',sans-serif; font-size:24px; font-weight:400; line-height:1.45; color:rgba(255,255,255,0.94); }
     .ghl-green { color:#65C465; }
     .ghl-yellow { color:#F3DA41; }
     .ghl-bold { font-weight:600; }
-    /* Keyed breakdown — one tidy column per highlighted phrase */
-    .goals-key { position:absolute; left:52px; right:52px; bottom:54px; display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
-    .goals-key-item { position:relative; background:rgba(255,255,255,0.04); border:1px solid var(--border); border-radius:10px; padding:16px 16px 15px; overflow:hidden; opacity:0; transform:translateY(10px); }
-    .goals-key-item::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; }
-    .goals-key-item.k-green::before  { background:#65C465; }
-    .goals-key-item.k-yellow::before { background:#F3DA41; }
-    .slide.visible .goals-key-item { opacity:1; transform:none; }
-    .slide.visible .goals-key-item:nth-child(1) { transition:opacity 0.4s ease 0.58s, transform 0.4s ease 0.58s; }
-    .slide.visible .goals-key-item:nth-child(2) { transition:opacity 0.4s ease 0.68s, transform 0.4s ease 0.68s; }
-    .slide.visible .goals-key-item:nth-child(3) { transition:opacity 0.4s ease 0.78s, transform 0.4s ease 0.78s; }
-    .slide.visible .goals-key-item:nth-child(4) { transition:opacity 0.4s ease 0.88s, transform 0.4s ease 0.88s; }
-    .slide.visible .goals-key-item:nth-child(5) { transition:opacity 0.4s ease 0.98s, transform 0.4s ease 0.98s; }
-    .goals-key-phrase { font-family:'HelveticaNeueLT',sans-serif; font-size:15px; font-weight:300; letter-spacing:-0.005em; line-height:1.15; margin-bottom:9px; }
-    .goals-key-lbl { font-size:11.5px; font-weight:600; letter-spacing:0.02em; color:#fff; margin-bottom:4px; }
-    .goals-key-txt { font-size:10.5px; color:var(--muted); line-height:1.4; }
+
+    /* Hand-written callouts */
+    .goals-note {
+      position:absolute;
+      font-family:'Bradley Hand', 'Marker Felt', 'Chalkboard SE', 'Comic Sans MS', cursive;
+      font-size:20px;
+      font-weight:400;
+      line-height:1.12;
+      color:rgba(255,255,255,0.62);
+      text-align:center;
+      opacity:0;
+      transform:translateY(6px);
+      z-index:3;
+    }
+    .slide.visible .goals-note { opacity:1; transform:none; }
+    .gn-layers    { left:208px; top:208px; transform:rotate(-7deg); transition:opacity 0.45s ease 0.62s, transform 0.45s ease 0.62s; }
+    .gn-format    { left:402px; top:188px; transform:rotate(-4deg); transition:opacity 0.45s ease 0.72s, transform 0.45s ease 0.72s; }
+    .gn-condition { left:510px; top:222px; transform:rotate(-6deg); transition:opacity 0.45s ease 0.82s, transform 0.45s ease 0.82s; }
+    .gn-ambitious { left:248px; top:410px; transform:rotate(-5deg); transition:opacity 0.45s ease 0.92s, transform 0.45s ease 0.92s; }
+    .gn-time      { left:700px; top:412px; transform:rotate(-4deg); transition:opacity 0.45s ease 1.02s, transform 0.45s ease 1.02s; }
+    .slide.visible .gn-layers    { transform:rotate(-7deg); }
+    .slide.visible .gn-format    { transform:rotate(-4deg); }
+    .slide.visible .gn-condition { transform:rotate(-6deg); }
+    .slide.visible .gn-ambitious { transform:rotate(-5deg); }
+    .slide.visible .gn-time      { transform:rotate(-4deg); }
+
+    .goals-arrows { position:absolute; inset:0; width:1024px; height:576px; overflow:visible; opacity:0; z-index:2; transition:opacity 0.5s ease 1.05s; }
+    .slide.visible .goals-arrows { opacity:1; }
+
+    /* ═══════════════════════════════════════════════
+       S15 · CURRENT STATE & TARGET STATE
+    ═══════════════════════════════════════════════ */
+    .cs-slide { position:absolute; inset:0; }
+    .cs-eyebrow { position:absolute; top:38px; left:52px; font-size:10px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--label); opacity:0; transform:translateY(5px); transition:opacity 0.4s ease 0.2s, transform 0.4s ease 0.2s; }
+    .slide.visible .cs-eyebrow { opacity:1; transform:none; }
+    .cs-heading { position:absolute; top:54px; left:52px; right:52px; font-family:'HelveticaNeueLT',sans-serif; font-size:27px; font-weight:300; letter-spacing:-0.01em; opacity:0; transform:translateY(8px); transition:opacity 0.5s ease 0.3s, transform 0.5s ease 0.3s; }
+    .slide.visible .cs-heading { opacity:1; transform:none; }
+    .cs-divider { position:absolute; left:496px; top:128px; width:1px; height:392px; background:var(--rule); opacity:0; transition:opacity 0.5s ease 0.4s; }
+    .slide.visible .cs-divider { opacity:1; }
+
+    /* Dark grouping shapes */
+    .cs-blob { position:absolute; background:rgba(255,255,255,0.045); border-radius:46% 54% 52% 48% / 55% 48% 52% 45%; opacity:0; transform:translateY(8px); }
+    .slide.visible .cs-blob { opacity:1; transform:none; transition:opacity 0.5s ease 0.5s, transform 0.5s ease 0.5s; }
+
+    .cs-ellipse { position:absolute; background:rgba(255,255,255,0.05); border-radius:50%; opacity:0; transition:opacity 0.55s ease 0.5s; }
+    .slide.visible .cs-ellipse { opacity:1; }
+    .cs-ellipse-sm { background:rgba(255,255,255,0.06); transition-delay:0.56s; }
+
+    /* Logos & icons */
+    .cs-logo-sm { position:absolute; display:flex; align-items:center; }
+    .cs-logo-sm img { width:100%; height:auto; display:block; }
+    .cs-blob-txt { position:absolute; font-family:'HelveticaNeueLT',sans-serif; font-size:14px; font-weight:300; color:rgba(255,255,255,0.92); letter-spacing:-0.005em; white-space:nowrap; }
+    .cs-blob-txt-wide { font-size:11px; font-weight:600; letter-spacing:0.06em; }
+
+    .cs-ic { position:absolute; width:34px; height:34px; }
+    .cs-ic svg { width:100%; height:100%; fill:none; stroke:rgba(255,255,255,0.85); stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+    .cs-ic-drone { width:40px; height:40px; }
+
+    /* AWS wordmark */
+    .aws-mark { position:absolute; display:flex; flex-direction:column; align-items:center; gap:1px; }
+    .aws-txt { font-family:'HelveticaNeueLT',sans-serif; font-size:24px; font-weight:300; color:#fff; line-height:0.9; letter-spacing:-0.01em; }
+    .aws-smile { width:42px; height:13px; display:block; }
+
+    /* MATLAB wordmark */
+    .matlab-mark { position:absolute; display:flex; align-items:center; gap:7px; }
+    .matlab-ic { width:26px; height:26px; }
+    .matlab-txt { font-family:'HelveticaNeueLT',sans-serif; font-size:22px; font-weight:300; letter-spacing:0.02em; color:#fff; }
+
+    /* SageMaker */
+    .cs-sagemaker { position:absolute; display:flex; align-items:center; gap:6px; }
+    .cs-sagemaker .cs-ic-svg { width:30px; height:30px; fill:none; stroke:rgba(255,255,255,0.85); stroke-width:1.4; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; }
+    .cs-sage-txt { display:flex; flex-direction:column; line-height:1.05; }
+    .cs-sage-txt span:first-child { font-size:8px; color:var(--muted); letter-spacing:0.02em; }
+    .cs-sage-txt span:last-child { font-size:11px; font-weight:600; color:#fff; letter-spacing:-0.005em; }
+
+    /* Route 53 badge */
+    .cs-route53 { position:absolute; width:32px; height:32px; }
+    .cs-route53 svg { width:100%; height:100%; fill:none; stroke:#E88A3C; stroke-width:1.6; }
+    .cs-route-txt { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:600; color:#fff; }
+
+    .cs-mini-arrow { position:absolute; height:20px; }
+
+    .cs-arrows { position:absolute; inset:0; width:1024px; height:576px; overflow:visible; opacity:0; z-index:1; transition:opacity 0.6s ease 0.9s; }
+    .slide.visible .cs-arrows { opacity:1; }
+
+    .cs-state-label { position:absolute; font-family:'HelveticaNeueLT',sans-serif; font-size:16px; font-weight:300; color:rgba(255,255,255,0.9); opacity:0; transform:translateY(6px); transition:opacity 0.45s ease 0.95s, transform 0.45s ease 0.95s; }
+    .slide.visible .cs-state-label { opacity:1; transform:none; }
+    .cs-state-sub { position:absolute; font-family:'FoundersGrotesk',sans-serif; font-size:13px; font-style:italic; color:var(--muted); opacity:0; transition:opacity 0.45s ease 1.05s; }
+    .slide.visible .cs-state-sub { opacity:1; }
 
     /* ═══════════════════════════════════════════════
        S16 · DATA MANAGEMENT
