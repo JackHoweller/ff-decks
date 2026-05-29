@@ -1994,3 +1994,15 @@
     .aip-cycle li:not(:last-child)::after { content:''; position:absolute; left:7.5px; top:12px; bottom:-9px; width:1px; background:rgba(243,218,65,0.28); }
     .aip-cycle-loop { margin-top:13px; font-size:11px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:var(--accent); display:flex; align-items:center; gap:7px; }
     .aip-cycle-loop-ico { font-size:15px; line-height:1; }
+
+    /* ═══════════════════════════════════════════════
+       FALLBACKS · keep frosted panels visible where
+       backdrop-filter is dropped (in-app browsers,
+       link-preview/screenshot bots, some mobile/FF)
+    ═══════════════════════════════════════════════ */
+    @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+      .fw-diagram { background: rgba(255,255,255,0.14); }
+      .su-card,
+      .snt-panel { background: rgba(8,18,14,0.86); }
+      .retro-board { background: rgba(18,24,32,0.78); }
+    }
