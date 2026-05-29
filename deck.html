@@ -99,8 +99,7 @@
                 <li>Watch the loss curve &amp; eval metrics</li>
                 <li>Ship the model if it beats the last one</li>
               </ul>
-              <div class="aip-cycle-loop"><span class="aip-cycle-loop-ico">&#x21BB;</span> then round again, every cycle</div>
-            </div>
+              </div>
           </div>
           <div class="aip-case">
             <div class="aip-case-media"><img src="scenario-saas.png" alt="A SaaS product self-improving from analytics and feedback"></div>
@@ -113,8 +112,7 @@
                 <li>A/B test it in production</li>
                 <li>Keep the winner, feed the result back</li>
               </ul>
-              <div class="aip-cycle-loop"><span class="aip-cycle-loop-ico">&#x21BB;</span> then round again, every cycle</div>
-            </div>
+              </div>
           </div>
         </div>
       </div>
@@ -1113,47 +1111,160 @@
     </div>
   </div>
 
-  <!-- ══ S15 · SMART GOALS - MINESHAFT ════════════════════════════ -->
+  <!-- ══ S15 · CURRENT STATE & TARGET STATE ════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="cs-slide">
+          <div class="cs-eyebrow">Data Management</div>
+          <div class="cs-heading">Current state &amp; target state</div>
+
+          <div class="cs-divider"></div>
+
+          <!-- ── LEFT · FRAZZLED ── -->
+          <div class="cs-blob" style="left:36px;  top:138px; width:208px; height:134px;">
+            <div class="aws-mark" style="left:22px; top:20px;"><span class="aws-txt">aws</span><svg class="aws-smile" viewBox="0 0 46 14"><path d="M3 4 C 15 12 31 12 43 4" fill="none" stroke="#F3A847" stroke-width="2" stroke-linecap="round"/><path d="M38 2.4 L43.5 4 L40 7.8" fill="none" stroke="#F3A847" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <svg class="cs-mini-arrow" viewBox="0 0 40 20" style="left:96px; top:30px; width:40px;"><path d="M2 14 C 14 4 26 4 36 9" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.4" stroke-dasharray="3 3"/></svg>
+            <div class="cs-ic" style="left:138px; top:18px;">
+              <svg viewBox="0 0 32 32"><path d="M9 22h13a5 5 0 0 0 .8-9.94A7 7 0 0 0 8.6 12 4.7 4.7 0 0 0 9 22Z"/><circle cx="14" cy="16.5" r="3"/><line x1="16.2" y1="18.7" x2="19" y2="21.5"/></svg>
+            </div>
+            <div class="cs-logo-sm" style="left:24px; top:78px; width:62px;"><img src="logos/django.svg" alt="Django"></div>
+            <div class="cs-ic" style="left:132px; top:74px;">
+              <svg viewBox="0 0 32 32"><path d="M16 3l11 6.2v13.6L16 29 5 22.8V9.2z"/><circle cx="16" cy="14.5" r="2.4"/><path d="M16 16.9v3.4"/></svg>
+            </div>
+          </div>
+
+          <div class="cs-blob" style="left:250px; top:158px; width:176px; height:78px;">
+            <div class="matlab-mark" style="left:24px; top:26px;">
+              <svg class="matlab-ic" viewBox="0 0 24 24"><path d="M2 19 C 9 19 9 5 16 5 C 21 5 22 11 22 19" fill="none" stroke="#E16737" stroke-width="2.2" stroke-linecap="round"/><path d="M9.5 12 C 12 8 13.5 6.5 16 5" fill="none" stroke="#0F8FC2" stroke-width="2" stroke-linecap="round"/></svg>
+              <span class="matlab-txt">MATLAB</span>
+            </div>
+          </div>
+
+          <div class="cs-blob" style="left:28px;  top:298px; width:142px; height:62px;">
+            <div class="cs-logo-sm" style="left:24px; top:16px; width:30px;"><img src="logos/snowflake.svg" alt="Snowflake"></div>
+            <span class="cs-blob-txt" style="left:60px; top:22px;">snowflake</span>
+          </div>
+
+          <div class="cs-blob" style="left:178px; top:272px; width:142px; height:66px;">
+            <div class="cs-logo-sm" style="left:18px; top:20px; width:28px;"><img src="logos/cloudflare.svg" alt="Cloudflare"></div>
+            <span class="cs-blob-txt cs-blob-txt-wide" style="left:50px; top:24px;">CLOUDFLARE</span>
+          </div>
+
+          <div class="cs-blob" style="left:330px; top:250px; width:132px; height:84px;">
+            <div class="cs-logo-sm" style="left:18px; top:14px; width:22px;"><img src="logos/github.svg" alt="GitHub"></div>
+            <span class="cs-blob-txt" style="left:46px; top:18px;">GitHub</span>
+            <div class="cs-logo-sm" style="left:18px; top:48px; width:22px;"><img src="logos/circleci.svg" alt="CircleCI"></div>
+            <span class="cs-blob-txt" style="left:46px; top:52px;">circleci</span>
+          </div>
+
+          <div class="cs-blob" style="left:96px;  top:360px; width:138px; height:82px;">
+            <div class="cs-ic" style="left:18px; top:24px;">
+              <svg viewBox="0 0 32 32"><path d="M9 4h11l5 5v17a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><line x1="12" y1="7.5" x2="12" y2="11.5"/><line x1="15" y1="7.5" x2="15" y2="11.5"/><line x1="18" y1="7.5" x2="18" y2="11.5"/></svg>
+            </div>
+            <div class="cs-ic" style="left:66px; top:30px; width:42px; height:34px;">
+              <svg viewBox="0 0 36 26"><rect x="6" y="2" width="24" height="15" rx="1.6"/><path d="M2 23h32l-3-4H5z"/></svg>
+            </div>
+          </div>
+
+          <div class="cs-blob" style="left:250px; top:356px; width:146px; height:82px;">
+            <div class="cs-ic cs-ic-drone" style="left:42px; top:18px;">
+              <svg viewBox="0 0 44 44"><circle cx="9" cy="10" r="4"/><circle cx="35" cy="10" r="4"/><circle cx="9" cy="34" r="4"/><circle cx="35" cy="34" r="4"/><rect x="16" y="16" width="12" height="9" rx="2"/><line x1="12.5" y1="13.5" x2="17" y2="17.5"/><line x1="31.5" y1="13.5" x2="27" y2="17.5"/><line x1="12.5" y1="30.5" x2="17" y2="24.5"/><line x1="31.5" y1="30.5" x2="27" y2="24.5"/><circle cx="22" cy="32" r="2.6"/><line x1="23.8" y1="33.8" x2="26.5" y2="36.5"/></svg>
+            </div>
+          </div>
+
+          <div class="cs-state-label" style="left:52px; top:462px;">Frazzled</div>
+
+          <!-- ── RIGHT · NOT FRAZZLED ── -->
+          <div class="cs-ellipse cs-ellipse-big" style="left:602px; top:206px; width:372px; height:236px;"></div>
+          <div class="cs-ellipse cs-ellipse-sm"  style="left:576px; top:138px; width:138px; height:68px;"></div>
+
+          <div class="cs-ic cs-ic-drone cs-r-drone" style="left:618px; top:150px;">
+            <svg viewBox="0 0 44 44"><circle cx="9" cy="10" r="4"/><circle cx="35" cy="10" r="4"/><circle cx="9" cy="34" r="4"/><circle cx="35" cy="34" r="4"/><rect x="16" y="16" width="12" height="9" rx="2"/><line x1="12.5" y1="13.5" x2="17" y2="17.5"/><line x1="31.5" y1="13.5" x2="27" y2="17.5"/><line x1="12.5" y1="30.5" x2="17" y2="24.5"/><line x1="31.5" y1="30.5" x2="27" y2="24.5"/><circle cx="22" cy="32" r="2.6"/><line x1="23.8" y1="33.8" x2="26.5" y2="36.5"/></svg>
+          </div>
+
+          <div class="aws-mark cs-r-aws" style="left:712px; top:222px;"><span class="aws-txt">aws</span><svg class="aws-smile" viewBox="0 0 46 14"><path d="M3 4 C 15 12 31 12 43 4" fill="none" stroke="#F3A847" stroke-width="2" stroke-linecap="round"/><path d="M38 2.4 L43.5 4 L40 7.8" fill="none" stroke="#F3A847" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+          <div class="cs-logo-sm cs-r-django" style="left:632px; top:268px; width:54px;"><img src="logos/django.svg" alt="Django"></div>
+          <div class="cs-ic cs-r-vault" style="left:660px; top:330px;">
+            <svg viewBox="0 0 32 32"><path d="M16 3l11 6.2v13.6L16 29 5 22.8V9.2z"/><circle cx="16" cy="14.5" r="2.4"/><path d="M16 16.9v3.4"/></svg>
+          </div>
+          <div class="cs-ic cs-r-bucket" style="left:740px; top:300px;">
+            <svg viewBox="0 0 32 32"><path d="M7 8h18l-1.8 18a2 2 0 0 1-2 1.8H10.8A2 2 0 0 1 8.8 26z"/><ellipse cx="16" cy="8" rx="9" ry="2.4"/></svg>
+          </div>
+          <div class="cs-sagemaker cs-r-sage" style="left:794px; top:280px;">
+            <svg class="cs-ic-svg" viewBox="0 0 32 32"><path d="M16 3l11 6.2v13.6L16 29 5 22.8V9.2z"/><circle cx="16" cy="16" r="2.4"/><circle cx="11" cy="13" r="1.4"/><circle cx="21" cy="19" r="1.4"/><line x1="12.2" y1="13.8" x2="14.6" y2="15.2"/><line x1="17.4" y1="16.8" x2="19.8" y2="18.2"/></svg>
+            <div class="cs-sage-txt"><span>Amazon</span><span>SageMaker</span></div>
+          </div>
+          <div class="cs-route53 cs-r-route" style="left:880px; top:276px;">
+            <svg viewBox="0 0 32 32"><path d="M16 3l11 6.2v13.6L16 29 5 22.8V9.2z"/></svg>
+            <span class="cs-route-txt">53</span>
+          </div>
+          <div class="cs-ic cs-r-search" style="left:888px; top:336px;">
+            <svg viewBox="0 0 32 32"><line x1="6" y1="24" x2="6" y2="18"/><line x1="11" y1="24" x2="11" y2="13"/><line x1="16" y1="24" x2="16" y2="20"/><circle cx="21" cy="13" r="5"/><line x1="24.6" y1="16.6" x2="28" y2="20"/></svg>
+          </div>
+          <div class="cs-ic cs-r-cloud" style="left:748px; top:386px;">
+            <svg viewBox="0 0 32 32"><path d="M9 22h13a5 5 0 0 0 .8-9.94A7 7 0 0 0 8.6 12 4.7 4.7 0 0 0 9 22Z"/><circle cx="14" cy="16.5" r="3"/><line x1="16.2" y1="18.7" x2="19" y2="21.5"/></svg>
+          </div>
+
+          <svg class="cs-arrows" viewBox="0 0 1024 576" aria-hidden="true">
+            <defs>
+              <marker id="cs-arrow" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto" markerUnits="strokeWidth">
+                <path d="M0,0 L7,3.5 L0,7" fill="rgba(255,255,255,0.5)"/>
+              </marker>
+            </defs>
+            <path d="M662 198 C 690 214 712 224 728 234" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+            <path d="M730 252 C 706 258 690 264 678 270" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+            <path d="M746 258 C 744 278 744 290 744 302" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+            <path d="M768 254 C 790 266 798 274 806 282" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+            <path d="M776 250 C 830 260 866 268 884 278" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+            <path d="M772 258 C 850 282 884 312 898 336" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+            <path d="M744 262 C 750 312 754 348 758 384" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+            <path d="M676 296 C 674 312 674 320 674 330" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+          </svg>
+
+          <div class="cs-state-label" style="left:556px; top:460px;">Not frazzled</div>
+          <div class="cs-state-sub" style="left:556px; top:486px;">Also not necessarily useful</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S16 · SMART GOALS - MINESHAFT ════════════════════════════ -->
   <div class="slide">
     <div class="slide-inner">
       <div class="slide-content">
         <div class="goals-slide">
           <div class="goals-eyebrow">Data Management</div>
-          <div class="goals-heading">Sending drones into a mineshaft – setting goals</div>
+          <div class="goals-heading">Sending drones into a mineshaft - setting goals</div>
           <div class="goals-rule-h"></div>
 
           <div class="goals-q-wrap">
-            <div class="goals-q">Can my <span class="ghl-green">hyperspectral</span> <span class="ghl-yellow">camera</span> <span class="ghl-green">drone</span> identify ore-grade zones</div>
-            <div class="goals-q">with <span class="ghl-yellow ghl-bold">&gt;90% accuracy</span> vs lab results over the next <span class="ghl-green">three months</span>?</div>
+            <div class="goals-q-num">3.</div>
+            <div class="goals-q-lines">
+              <div class="goals-q">Can my <span class="ghl-green">hyperspectral</span> <span class="ghl-yellow">camera</span> <span class="ghl-green">drone</span> identify ore-grade zones</div>
+              <div class="goals-q">with <span class="ghl-yellow ghl-bold">&gt;90% accuracy</span> vs lab results over the next <span class="ghl-green">three months</span>?</div>
+            </div>
           </div>
 
-          <div class="goals-key">
-            <div class="goals-key-item k-green">
-              <div class="goals-key-phrase ghl-green">Hyperspectral</div>
-              <div class="goals-key-lbl">Multiple data layers</div>
-              <div class="goals-key-txt">Many spectral bands to capture, store &amp; process</div>
-            </div>
-            <div class="goals-key-item k-yellow">
-              <div class="goals-key-phrase ghl-yellow">Camera</div>
-              <div class="goals-key-lbl">Data format</div>
-              <div class="goals-key-txt">What resolution &amp; format will it output?</div>
-            </div>
-            <div class="goals-key-item k-green">
-              <div class="goals-key-phrase ghl-green">Drone</div>
-              <div class="goals-key-lbl">Condition complexity</div>
-              <div class="goals-key-txt">Harsh, variable underground conditions</div>
-            </div>
-            <div class="goals-key-item k-yellow">
-              <div class="goals-key-phrase ghl-yellow">&gt;90% accuracy</div>
-              <div class="goals-key-lbl">Ambitious but measurable</div>
-              <div class="goals-key-txt">A clear, quantified bar for success</div>
-            </div>
-            <div class="goals-key-item k-green">
-              <div class="goals-key-phrase ghl-green">Three months</div>
-              <div class="goals-key-lbl">Time-boxed</div>
-              <div class="goals-key-txt">A deadline to measure progress against</div>
-            </div>
-          </div>
+          <div class="goals-note gn-layers">Multiple data<br>layers</div>
+          <div class="goals-note gn-format">Data<br>format</div>
+          <div class="goals-note gn-condition">Condition complexity</div>
+          <div class="goals-note gn-ambitious">Ambitious!</div>
+          <div class="goals-note gn-time">Time marker</div>
+
+          <svg class="goals-arrows" viewBox="0 0 1024 576" aria-hidden="true">
+            <defs>
+              <marker id="goal-arrow" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto" markerUnits="strokeWidth">
+                <path d="M0,0 L8,4 L0,8" fill="rgba(255,255,255,0.55)"/>
+              </marker>
+            </defs>
+            <path d="M300 268 C290 286 296 296 314 304" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#goal-arrow)"/>
+            <path d="M447 244 C440 268 446 284 458 300" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#goal-arrow)"/>
+            <path d="M612 262 C600 282 588 294 574 302" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#goal-arrow)"/>
+            <path d="M300 404 C292 392 296 384 306 372" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#goal-arrow)"/>
+            <path d="M770 404 C764 392 770 384 782 372" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#goal-arrow)"/>
+          </svg>
         </div>
       </div>
     </div>
