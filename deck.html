@@ -38,8 +38,238 @@
           </div>
           <div class="agenda-item">
             <div class="agenda-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-            <div class="agenda-label">Self-improving companies</div>
+            <div class="agenda-label">Recursive, self-improving teams</div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S1a1 · HOW WE USED TO BUILD ═════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="hb-header">
+          <div class="hb-title">Person <> person loops</div>
+          <div class="hb-rule"></div>
+        </div>
+        <div class="shift-center">
+          <div class="shift-pair">
+            <div class="shift-node">Product</div>
+            <div class="shift-cycle"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+            <div class="shift-node">Engineering</div>
+          </div>
+          <div class="shift-caption">This used to be a masterclass on tightening loops between <em>people</em><br>Product intent &rarr; engineering output &rarr; feedback &rarr; refine.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S1a2 · WHAT'S CHANGED ═══════════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="hb-header">
+          <div class="hb-title">Now the loop can run itself</div>
+          <div class="hb-rule"></div>
+        </div>
+        <div class="hb-body-center">
+          <div class="hb-statement">That gap used to be closed by <em>people</em>.<br>It should be closed by <em class="shift-em-accent">self-improving agents</em>.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S1e · IN PRACTICE - SNAILCAM & SVANTERRA ════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="aip-cases-header">
+          <div class="aip-cases-title">In practice</div>
+        </div>
+        <div class="aip-cases">
+          <div class="aip-case">
+            <div class="aip-case-media"><img src="scenario-retraining.jpg" alt="AI agents retraining and fine-tuning an ML model"></div>
+            <div class="aip-case-body">
+              <div class="aip-case-name">Agentic model training</div>
+              <div class="aip-case-rule"></div>
+              <ul class="aip-cycle">
+                <li>Curate &amp; label fresh training data</li>
+                <li>Run a fine-tune - the agent owns the inner loop</li>
+                <li>Watch the loss curve &amp; eval metrics</li>
+                <li>Ship the model if it beats the last one</li>
+              </ul>
+              <div class="aip-cycle-loop"><span class="aip-cycle-loop-ico">&#x21BB;</span> then round again, every cycle</div>
+            </div>
+          </div>
+          <div class="aip-case">
+            <div class="aip-case-media"><img src="scenario-saas.png" alt="A SaaS product self-improving from analytics and feedback"></div>
+            <div class="aip-case-body">
+              <div class="aip-case-name">Self-improving products</div>
+              <div class="aip-case-rule"></div>
+              <ul class="aip-cycle">
+                <li>Ingest customer feedback, prioritisation &amp; user analytics</li>
+                <li>Make the change &amp; push the code</li>
+                <li>A/B test it in production</li>
+                <li>Keep the winner, feed the result back</li>
+              </ul>
+              <div class="aip-cycle-loop"><span class="aip-cycle-loop-ico">&#x21BB;</span> then round again, every cycle</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S1b · PARADIGM SHIFT - DIVIDER / REFRAME ════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="rules">
+        <div class="rule-h" style="top:38%"></div>
+      </div>
+      <div class="slide-content">
+        <div class="sec-div-wrap">
+          <div class="sec-div-eyebrow"><span class="loop-glyph"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span>The Paradigm Shift</div>
+          <div class="sec-div-title">Recursion in agents</div>
+          <div class="sec-div-sub">The shift: from instructing the model step by step &rarr; setting it up to find the <em>delta</em> between its output and yours, and close it itself.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S1b2 · ANTI-PATTERN - THE BROKEN LOOP ═══════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="hb-header">
+          <div class="hb-eyebrow">What we don't want</div>
+          <div class="hb-title">No cycle, nothing learned</div>
+          <div class="hb-rule"></div>
+        </div>
+        <div class="broken-wrap">
+          <div class="broken-flow">
+            <div class="broken-node">AI drafts</div>
+            <div class="broken-arrow">&rarr;</div>
+            <div class="broken-node">You tweak &amp; fix</div>
+            <div class="broken-arrow">&rarr;</div>
+            <div class="broken-node broken-node-dim">Ship &amp; forget</div>
+          </div>
+          <div class="broken-return">
+            <svg viewBox="0 0 640 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M620 6 C 620 78 20 78 20 6" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="2" stroke-dasharray="5 6" stroke-linecap="round"/>
+              <polyline points="12,16 20,5 28,16" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="320" cy="60" r="14" fill="#0b1a14"/>
+              <line x1="311" y1="51" x2="329" y2="69" stroke="#E07B5A" stroke-width="2.6" stroke-linecap="round"/>
+              <line x1="329" y1="51" x2="311" y2="69" stroke="#E07B5A" stroke-width="2.6" stroke-linecap="round"/>
+            </svg>
+            <div class="broken-return-lbl">Corrections discarded &mdash; the loop never closes</div>
+          </div>
+        </div>
+        <div class="footnote">No capture, no convergence - you pay for the same corrections over and over</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S1c · THE RECURSIVE LOOP (CENTRAL MOTIF) ════════════════ -->
+  <div class="slide aip-loop-slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="hb-header">
+          <div class="hb-eyebrow"><span class="loop-glyph"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span>The Paradigm Shift</div>
+          <div class="hb-title">The recursive loop</div>
+          <div class="hb-rule"></div>
+        </div>
+        <div class="aip-loop">
+          <svg class="aip-loop-svg" viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <marker id="aip-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+                <path d="M0,1 L6,4 L0,7" fill="none" stroke="#F3DA41" stroke-width="1.3"/>
+              </marker>
+            </defs>
+            <circle cx="380" cy="180" r="104" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+            <path class="aip-arc aip-arc-1" d="M412.1,81.1 A104 104 0 0 1 478.9,147.9" fill="none" stroke="rgba(243,218,65,0.6)" stroke-width="2.2" stroke-linecap="round" marker-end="url(#aip-arrow)"/>
+            <path class="aip-arc aip-arc-2" d="M478.9,212.1 A104 104 0 0 1 412.1,278.9" fill="none" stroke="rgba(243,218,65,0.6)" stroke-width="2.2" stroke-linecap="round" marker-end="url(#aip-arrow)"/>
+            <path class="aip-arc aip-arc-3" d="M347.9,278.9 A104 104 0 0 1 281.1,212.1" fill="none" stroke="rgba(243,218,65,0.6)" stroke-width="2.2" stroke-linecap="round" marker-end="url(#aip-arrow)"/>
+            <path class="aip-arc aip-arc-4" d="M281.1,147.9 A104 104 0 0 1 347.9,81.1" fill="none" stroke="rgba(243,218,65,0.6)" stroke-width="2.2" stroke-linecap="round" marker-end="url(#aip-arrow)"/>
+            <circle class="aip-dot" cx="380" cy="76" r="6" fill="#F3DA41"/>
+            <circle class="aip-dot" cx="484" cy="180" r="6" fill="#F3DA41"/>
+            <circle class="aip-dot" cx="380" cy="284" r="6" fill="#F3DA41"/>
+            <circle class="aip-dot" cx="276" cy="180" r="6" fill="#F3DA41"/>
+          </svg>
+          <div class="aip-node aip-node-top">
+            <div class="aip-node-k">01 &middot; AI</div>
+            <div class="aip-node-t">AI drafts</div>
+            <div class="aip-node-d">proposes a first pass</div>
+          </div>
+          <div class="aip-node aip-node-right">
+            <div class="aip-node-k">02 &middot; Human</div>
+            <div class="aip-node-t">You tweak</div>
+            <div class="aip-node-d">override or correct it</div>
+          </div>
+          <div class="aip-node aip-node-bottom">
+            <div class="aip-node-k">03 &middot; AI</div>
+            <div class="aip-node-t">AI finds the delta</div>
+            <div class="aip-node-d">why did you change it?</div>
+          </div>
+          <div class="aip-node aip-node-left">
+            <div class="aip-node-k">04 &middot; AI</div>
+            <div class="aip-node-t">Self-improving tweak</div>
+            <div class="aip-node-d">bakes the lesson back in</div>
+          </div>
+          <div class="aip-loop-center">
+            <div class="aip-loop-center-t">Close the delta</div>
+            <div class="aip-loop-center-d">every cycle, the gap shrinks</div>
+          </div>
+        </div>
+        <div class="footnote">No one writes the rules - the loop discovers them from what humans actually do</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S1d · HOW - THE TWO STEPS ═══════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="three-step-header">How do you get there? Two steps</div>
+        <div class="three-step-wrap aip-two-step">
+          <div class="step-col">
+            <div class="step-num">Step 01</div>
+            <div class="step-title">Radical context gathering</div>
+            <div class="step-rule"></div>
+            <div class="step-pts">
+              <div class="step-pt">Record everything - conversations, decisions, docs, tool output</div>
+              <div class="step-pt">Open up access so the model can see what you actually did, not just the outcome</div>
+              <div class="step-pt">Context is the raw material the loop learns from</div>
+              <div class="step-pt">Easy to do with Notion, Granola, we have teams using computer use</div>
+            </div>
+          </div>
+          <div class="step-col">
+            <div class="step-num">Step 02</div>
+            <div class="step-title">Recursive loops, everywhere</div>
+            <div class="step-rule"></div>
+            <div class="step-pts">
+              <div class="step-pt">Set up self-running loops on top of that context</div>
+              <div class="step-pt">E.g. a <span class="aip-hl">weekly Claude cowork job</span> that reads back through your conversations</div>
+              <div class="step-pt">It finds the deltas itself and proposes the improvements</div>
+              <div class="step-pt">Then get your <em>whole team</em> working this way by default</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S1f · SECTION DIVIDER - PRODUCT ═════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="rules">
+        <div class="rule-h" style="top:38%"></div>
+      </div>
+      <div class="slide-content">
+        <div class="sec-div-wrap">
+          <div class="sec-div-eyebrow">Working cohesively</div>
+          <div class="sec-div-title">Product</div>
+          <div class="sec-div-sub">Our most important - and most complex - work still gets built by a team, together. That's exactly why proper product methodology matters more than ever across your company.</div>
         </div>
       </div>
     </div>
@@ -58,26 +288,18 @@
           <div class="s2-right">
             <div class="sprint-card">
               <div style="margin-bottom:12px;line-height:0">
-              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <defs>
-                  <linearGradient id="sprint-cycle-ring" x1="36" y1="34" x2="36" y2="8" gradientUnits="userSpaceOnUse">
-                    <stop offset="0" stop-color="#F3DA41" stop-opacity="0.16"/>
-                    <stop offset="0.52" stop-color="#F3DA41" stop-opacity="0.52"/>
-                    <stop offset="1" stop-color="#F3DA41"/>
-                  </linearGradient>
-                </defs>
-                <circle cx="21" cy="21" r="15" stroke="rgba(243,218,65,0.12)" stroke-width="2.5"/>
-                <path d="M21 6 A15 15 0 1 0 36 21" stroke="url(#sprint-cycle-ring)" stroke-width="2.8" stroke-linecap="round"/>
-                <path d="M31.5 17.5 L36 22 L40.5 17.5" stroke="#F3DA41" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#F3DA41" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <polyline points="23 4 23 10 17 10"/>
+                <polyline points="1 20 1 14 7 14"/>
+                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
               </svg>
             </div>
             <div class="sprint-kw">Sprint</div>
               <div class="sprint-def">A short, time-boxed period when a team works to complete a set amount of work.</div>
-              <div class="sprint-sub">Typical duration: 1 week early on → 2 weeks as complexity grows → longer as the product matures.</div>
+              <div class="sprint-sub">Mostly to motivate teams, some move towards tighter, more continuous loops over time.</div>
             </div>
           </div>
         </div>
-        <div class="footnote">As you build, your model learns - every human correction is a labelled training example</div>
       </div>
     </div>
   </div>
@@ -111,47 +333,77 @@
             </div>
           </div>
           <svg class="tl-svg" viewBox="0 0 912 170" xmlns="http://www.w3.org/2000/svg">
-            <!-- Track -->
-            <rect x="0" y="82" width="912" height="4" rx="2" fill="rgba(255,255,255,0.14)"/>
-            <!-- Daily standups band -->
-            <rect x="120" y="82" width="680" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
-            <!-- Standup label -->
-            <text x="460" y="70" text-anchor="middle" dominant-baseline="middle" font-size="10" font-weight="600" letter-spacing="0.12em" fill="rgba(255,255,255,0.62)" font-family="FoundersGrotesk,sans-serif">DAILY STANDUPS · 15 MIN</text>
+            <!-- Track: draws left→right via stroke-dasharray -->
+            <line class="tl-anim-track" x1="0" y1="84" x2="912" y2="84" stroke="rgba(255,255,255,0.14)" stroke-width="4" stroke-linecap="round"/>
 
-            <!-- Planning - above track, x=91 (10%) -->
-            <line x1="91" y1="54" x2="91" y2="82" stroke="rgba(255,255,255,0.42)" stroke-width="1"/>
-            <circle cx="91" cy="84" r="9" fill="rgba(243,218,65,0.22)"/>
-            <circle cx="91" cy="84" r="5" fill="#F3DA41"/>
-            <text x="91" y="42" text-anchor="middle" font-size="12.5" font-weight="600" fill="white" font-family="FoundersGrotesk,sans-serif">Planning</text>
-            <rect x="68" y="6" width="46" height="17" rx="4" fill="rgba(243,218,65,0.20)"/>
-            <text x="91" y="19" text-anchor="middle" font-size="9" font-weight="600" fill="#F3DA41" font-family="FoundersGrotesk,sans-serif">1 hr</text>
+            <!-- Daily standups band + label -->
+            <g class="tl-anim-standup">
+              <rect x="120" y="82" width="680" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+              <text x="460" y="70" text-anchor="middle" dominant-baseline="middle" font-size="10" font-weight="600" letter-spacing="0.12em" fill="rgba(255,255,255,0.62)" font-family="FoundersGrotesk,sans-serif">DAILY STANDUPS · 15 MIN</text>
+            </g>
 
-            <!-- Mid-Sprint Progress - below track, x=502 (55%) -->
-            <line x1="502" y1="86" x2="502" y2="114" stroke="rgba(255,255,255,0.42)" stroke-width="1"/>
-            <circle cx="502" cy="84" r="9" fill="rgba(243,218,65,0.22)"/>
-            <circle cx="502" cy="84" r="5" fill="#F3DA41"/>
-            <text x="502" y="130" text-anchor="middle" font-size="12.5" font-weight="600" fill="white" font-family="FoundersGrotesk,sans-serif">Mid-Sprint Progress</text>
-            <rect x="469" y="138" width="66" height="17" rx="4" fill="rgba(243,218,65,0.20)"/>
-            <text x="502" y="151" text-anchor="middle" font-size="9" font-weight="600" fill="#F3DA41" font-family="FoundersGrotesk,sans-serif">30 min</text>
+            <!-- Planning - above track, x=91 -->
+            <g class="tl-anim-node tl-anim-node-1">
+              <line x1="91" y1="54" x2="91" y2="82" stroke="rgba(255,255,255,0.42)" stroke-width="1"/>
+              <circle cx="91" cy="84" r="9" fill="rgba(243,218,65,0.22)"/>
+              <circle cx="91" cy="84" r="5" fill="#F3DA41"/>
+              <circle class="tl-pulse" cx="91" cy="84" r="5" fill="none" stroke="#F3DA41" stroke-width="1.5"/>
+              <text x="91" y="42" text-anchor="middle" font-size="12.5" font-weight="600" fill="white" font-family="FoundersGrotesk,sans-serif">Planning</text>
+              <rect x="68" y="6" width="46" height="17" rx="4" fill="rgba(243,218,65,0.20)"/>
+              <text x="91" y="19" text-anchor="middle" font-size="9" font-weight="600" fill="#F3DA41" font-family="FoundersGrotesk,sans-serif">1 hr</text>
+            </g>
 
-            <!-- Show & Tell - above track, x=730 (80%) -->
-            <line x1="730" y1="54" x2="730" y2="82" stroke="rgba(255,255,255,0.42)" stroke-width="1"/>
-            <circle cx="730" cy="84" r="9" fill="rgba(243,218,65,0.22)"/>
-            <circle cx="730" cy="84" r="5" fill="#F3DA41"/>
-            <text x="730" y="42" text-anchor="middle" font-size="12.5" font-weight="600" fill="white" font-family="FoundersGrotesk,sans-serif">Show &amp; Tell</text>
-            <rect x="707" y="6" width="46" height="17" rx="4" fill="rgba(243,218,65,0.20)"/>
-            <text x="730" y="19" text-anchor="middle" font-size="9" font-weight="600" fill="#F3DA41" font-family="FoundersGrotesk,sans-serif">1 hr</text>
+            <!-- Mid-Sprint Progress - below track, x=502 -->
+            <g class="tl-anim-node tl-anim-node-2">
+              <line x1="502" y1="86" x2="502" y2="114" stroke="rgba(255,255,255,0.42)" stroke-width="1"/>
+              <circle cx="502" cy="84" r="9" fill="rgba(243,218,65,0.22)"/>
+              <circle cx="502" cy="84" r="5" fill="#F3DA41"/>
+              <circle class="tl-pulse" cx="502" cy="84" r="5" fill="none" stroke="#F3DA41" stroke-width="1.5"/>
+              <text x="502" y="130" text-anchor="middle" font-size="12.5" font-weight="600" fill="white" font-family="FoundersGrotesk,sans-serif">Mid-Sprint Progress</text>
+              <rect x="469" y="138" width="66" height="17" rx="4" fill="rgba(243,218,65,0.20)"/>
+              <text x="502" y="151" text-anchor="middle" font-size="9" font-weight="600" fill="#F3DA41" font-family="FoundersGrotesk,sans-serif">30 min</text>
+            </g>
 
-            <!-- Retrospective - below track, x=866 (95%) -->
-            <line x1="866" y1="86" x2="866" y2="114" stroke="rgba(255,255,255,0.42)" stroke-width="1"/>
-            <circle cx="866" cy="84" r="9" fill="rgba(243,218,65,0.22)"/>
-            <circle cx="866" cy="84" r="5" fill="#F3DA41"/>
-            <text x="866" y="130" text-anchor="middle" font-size="12.5" font-weight="600" fill="white" font-family="FoundersGrotesk,sans-serif">Retrospective</text>
-            <rect x="843" y="138" width="46" height="17" rx="4" fill="rgba(243,218,65,0.20)"/>
-            <text x="866" y="151" text-anchor="middle" font-size="9" font-weight="600" fill="#F3DA41" font-family="FoundersGrotesk,sans-serif">1 hr</text>
+            <!-- Show & Tell - above track, x=730 -->
+            <g class="tl-anim-node tl-anim-node-3">
+              <line x1="730" y1="54" x2="730" y2="82" stroke="rgba(255,255,255,0.42)" stroke-width="1"/>
+              <circle cx="730" cy="84" r="9" fill="rgba(243,218,65,0.22)"/>
+              <circle cx="730" cy="84" r="5" fill="#F3DA41"/>
+              <circle class="tl-pulse" cx="730" cy="84" r="5" fill="none" stroke="#F3DA41" stroke-width="1.5"/>
+              <text x="730" y="42" text-anchor="middle" font-size="12.5" font-weight="600" fill="white" font-family="FoundersGrotesk,sans-serif">Show &amp; Tell</text>
+              <rect x="707" y="6" width="46" height="17" rx="4" fill="rgba(243,218,65,0.20)"/>
+              <text x="730" y="19" text-anchor="middle" font-size="9" font-weight="600" fill="#F3DA41" font-family="FoundersGrotesk,sans-serif">1 hr</text>
+            </g>
+
+            <!-- Retrospective - below track, x=866 -->
+            <g class="tl-anim-node tl-anim-node-4">
+              <line x1="866" y1="86" x2="866" y2="114" stroke="rgba(255,255,255,0.42)" stroke-width="1"/>
+              <circle cx="866" cy="84" r="9" fill="rgba(243,218,65,0.22)"/>
+              <circle cx="866" cy="84" r="5" fill="#F3DA41"/>
+              <circle class="tl-pulse" cx="866" cy="84" r="5" fill="none" stroke="#F3DA41" stroke-width="1.5"/>
+              <text x="866" y="130" text-anchor="middle" font-size="12.5" font-weight="600" fill="white" font-family="FoundersGrotesk,sans-serif">Retrospective</text>
+              <rect x="843" y="138" width="46" height="17" rx="4" fill="rgba(243,218,65,0.20)"/>
+              <text x="866" y="151" text-anchor="middle" font-size="9" font-weight="600" fill="#F3DA41" font-family="FoundersGrotesk,sans-serif">1 hr</text>
+            </g>
           </svg>
         </div>
-        <div class="footnote">Sprint ceremonies keep the team aligned, accountable, and improving</div>
+        <div class="footnote">Ceremonies keep the team aligned and improving - each retro is a delta you feed back into the loop</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S4b · SECTION DIVIDER - PLANNING ════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="rules">
+        <div class="rule-h" style="top:38%"></div>
+      </div>
+      <div class="slide-content">
+        <div class="sec-div-wrap">
+          <div class="sec-div-eyebrow">Sprint Ceremonies</div>
+          <div class="sec-div-title">Planning</div>
+          <div class="sec-div-sub">The most important ceremony in the sprint - if you get this wrong, everything that follows suffers.</div>
+        </div>
       </div>
     </div>
   </div>
@@ -186,12 +438,12 @@
           </div>
           <div class="step-col">
             <div class="step-num">03 · Refine</div>
-            <div class="step-title"><span style="text-decoration:line-through;color:rgba(255,255,255,0.3)">Write the PRD</span><br><span style="font-size:21px;color:var(--accent)">Get AI to write it</span></div>
+            <div class="step-title"><span class="strike-anim">Write the PRD</span><br><span class="ai-write-reveal" style="font-size:21px">Get AI to write it</span></div>
             <div class="step-rule"></div>
             <div class="step-pts">
               <div class="step-pt">Spar with the model - ask it to challenge you</div>
               <div class="step-pt">What <em>doesn't</em> change is more important than ever</div>
-              <div class="step-pt">How will AI understand you better next time?</div>
+              <div class="step-pt">Your edits are the delta - log them so AI needs fewer next time</div>
               <div class="step-pt">Cut the fluff. Make it easy for your team to execute</div>
             </div>
           </div>
@@ -201,14 +453,16 @@
   </div>
 
   <!-- ══ S5 · PRIORITISATION FRAMEWORKS ══════════════════════════ -->
-  <div class="slide">
+  <div class="slide s5" data-steps="3">
     <div class="slide-inner">
       <div class="slide-content">
         <div class="fw-header">
           <div class="fw-header-title">Prioritisation frameworks</div>
         </div>
         <div class="fw-cards">
-          <div class="fw-card">
+
+          <!-- ── ICE SCORE · Step 1 ──────────────────────── -->
+          <div class="fw-card" data-step="1">
             <div class="fw-formula">ICE Score</div>
             <div class="fw-diagram">
               <div class="ice-row">
@@ -218,7 +472,7 @@
                 <div class="ice-op">×</div>
                 <div class="ice-box"><div class="ice-box-lbl">Ease</div><div class="ice-box-val">6</div></div>
                 <div class="ice-op">=</div>
-                <div class="ice-result"><div class="ice-result-lbl">Score</div><div class="ice-result-val">336</div></div>
+                <div class="ice-result"><div class="ice-result-lbl">Score</div><div class="ice-result-val" id="ice-counter">0</div></div>
               </div>
             </div>
             <div class="fw-notes">
@@ -228,7 +482,9 @@
               <div class="fw-pt fw-pt-con"><span class="fw-icon fw-icon-con"><svg viewBox="0 0 24 24"><path d="M12 3 22 20H2L12 3z"/><line x1="12" y1="9" x2="12" y2="14"/><circle cx="12" cy="17.5" r="1" fill="currentColor" stroke="none"/></svg></span>Ignores how many users are affected</div>
             </div>
           </div>
-          <div class="fw-card">
+
+          <!-- ── MOSCOW · Step 2 ────────────────────────── -->
+          <div class="fw-card" data-step="2">
             <div class="fw-formula">MoSCoW</div>
             <div class="fw-diagram">
               <div class="moscow-grid">
@@ -245,7 +501,9 @@
               <div class="fw-pt fw-pt-con"><span class="fw-icon fw-icon-con"><svg viewBox="0 0 24 24"><path d="M12 3 22 20H2L12 3z"/><line x1="12" y1="9" x2="12" y2="14"/><circle cx="12" cy="17.5" r="1" fill="currentColor" stroke="none"/></svg></span>More release planning than prioritisation</div>
             </div>
           </div>
-          <div class="fw-card">
+
+          <!-- ── RISK / REWARD · Step 3 ─────────────────── -->
+          <div class="fw-card" data-step="3">
             <div class="fw-formula">Risk / Reward</div>
             <div class="fw-diagram">
               <svg class="rr-graph" viewBox="0 0 260 140" xmlns="http://www.w3.org/2000/svg" aria-label="Risk vs reward quadrant chart">
@@ -256,47 +514,47 @@
                   </linearGradient>
                 </defs>
 
-                <!-- Plot area -->
-                <rect x="40" y="8" width="210" height="108" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)"/>
+                <!-- Plot area border -->
+                <rect class="rr-border" x="40" y="8" width="210" height="108" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)"/>
 
                 <!-- Quadrant fills -->
-                <rect x="40"  y="8"  width="105" height="54" fill="rgba(255,255,255,0.025)"/>
-                <rect x="145" y="8"  width="105" height="54" fill="url(#rr-sweet)" stroke="rgba(243,218,65,0.32)" stroke-width="0.75"/>
-                <rect x="40"  y="62" width="105" height="54" fill="rgba(255,255,255,0.015)"/>
-                <rect x="145" y="62" width="105" height="54" fill="rgba(255,255,255,0.025)"/>
+                <rect class="rr-q rr-q1"      x="40"  y="8"  width="105" height="54" fill="rgba(255,255,255,0.025)"/>
+                <rect class="rr-q rr-q-sweet"  x="145" y="8"  width="105" height="54" fill="url(#rr-sweet)" stroke="rgba(243,218,65,0.32)" stroke-width="0.75"/>
+                <rect class="rr-q rr-q3"       x="40"  y="62" width="105" height="54" fill="rgba(255,255,255,0.015)"/>
+                <rect class="rr-q rr-q4"       x="145" y="62" width="105" height="54" fill="rgba(255,255,255,0.025)"/>
 
-                <!-- Grid -->
-                <line x1="145" y1="8"  x2="145" y2="116" stroke="rgba(255,255,255,0.16)" stroke-width="1" stroke-dasharray="4 3"/>
-                <line x1="40"  y1="62" x2="250" y2="62"  stroke="rgba(255,255,255,0.16)" stroke-width="1" stroke-dasharray="4 3"/>
+                <!-- Quadrant dividers -->
+                <line class="rr-grid" x1="145" y1="8"  x2="145" y2="116" stroke="rgba(255,255,255,0.16)" stroke-width="1" stroke-dasharray="4 3"/>
+                <line class="rr-grid" x1="40"  y1="62" x2="250" y2="62"  stroke="rgba(255,255,255,0.16)" stroke-width="1" stroke-dasharray="4 3"/>
 
                 <!-- Axes -->
-                <line x1="40" y1="116" x2="250" y2="116" stroke="rgba(255,255,255,0.42)" stroke-width="1.5"/>
-                <line x1="40" y1="8"   x2="40"  y2="116" stroke="rgba(255,255,255,0.42)" stroke-width="1.5"/>
-                <polygon points="250,116 243,112.5 243,119.5" fill="rgba(255,255,255,0.42)"/>
-                <polygon points="40,8 36.5,14.5 43.5,14.5" fill="rgba(255,255,255,0.42)"/>
+                <line class="rr-axis rr-axis-x" x1="40" y1="116" x2="250" y2="116" stroke="rgba(255,255,255,0.42)" stroke-width="1.5"/>
+                <line class="rr-axis rr-axis-y" x1="40" y1="8"   x2="40"  y2="116" stroke="rgba(255,255,255,0.42)" stroke-width="1.5"/>
+                <polygon class="rr-arrow" points="250,116 243,112.5 243,119.5" fill="rgba(255,255,255,0.42)"/>
+                <polygon class="rr-arrow" points="40,8 36.5,14.5 43.5,14.5" fill="rgba(255,255,255,0.42)"/>
 
                 <!-- Axis labels -->
-                <text x="145" y="128" text-anchor="middle" font-size="12" font-weight="600" letter-spacing="0.1em" fill="rgba(255,255,255,0.82)" font-family="FoundersGrotesk,sans-serif">REWARD →</text>
-                <text x="7" y="62" text-anchor="middle" font-size="12" font-weight="600" letter-spacing="0.1em" fill="rgba(255,255,255,0.82)" font-family="FoundersGrotesk,sans-serif" transform="rotate(-90 7 62)">RISK →</text>
-                <text x="50"  y="130" font-size="11" font-weight="500" fill="rgba(255,255,255,0.62)" font-family="FoundersGrotesk,sans-serif">Low</text>
-                <text x="238" y="130" text-anchor="end" font-size="11" font-weight="500" fill="rgba(255,255,255,0.62)" font-family="FoundersGrotesk,sans-serif">High</text>
-                <text x="20" y="110" text-anchor="middle" font-size="11" font-weight="500" fill="rgba(255,255,255,0.62)" font-family="FoundersGrotesk,sans-serif" transform="rotate(-90 20 110)">Low</text>
-                <text x="20" y="12"  text-anchor="middle" font-size="11" font-weight="500" fill="rgba(255,255,255,0.62)" font-family="FoundersGrotesk,sans-serif" transform="rotate(-90 20 12)">High</text>
+                <text class="rr-axis-lbl" x="145" y="128" text-anchor="middle" font-size="12" font-weight="600" letter-spacing="0.1em" fill="rgba(255,255,255,0.82)" font-family="FoundersGrotesk,sans-serif">REWARD →</text>
+                <text class="rr-axis-lbl" x="7" y="62" text-anchor="middle" font-size="12" font-weight="600" letter-spacing="0.1em" fill="rgba(255,255,255,0.82)" font-family="FoundersGrotesk,sans-serif" transform="rotate(-90 7 62)">RISK →</text>
+                <text class="rr-range-lbl" x="50"  y="130" font-size="11" font-weight="500" fill="rgba(255,255,255,0.62)" font-family="FoundersGrotesk,sans-serif">Low</text>
+                <text class="rr-range-lbl" x="238" y="130" text-anchor="end" font-size="11" font-weight="500" fill="rgba(255,255,255,0.62)" font-family="FoundersGrotesk,sans-serif">High</text>
+                <text class="rr-range-lbl" x="20" y="110" text-anchor="middle" font-size="11" font-weight="500" fill="rgba(255,255,255,0.62)" font-family="FoundersGrotesk,sans-serif" transform="rotate(-90 20 110)">Low</text>
+                <text class="rr-range-lbl" x="20" y="12"  text-anchor="middle" font-size="11" font-weight="500" fill="rgba(255,255,255,0.62)" font-family="FoundersGrotesk,sans-serif" transform="rotate(-90 20 12)">High</text>
 
                 <!-- Quadrant labels -->
-                <text x="92" y="30" text-anchor="middle" font-family="FoundersGrotesk,sans-serif">
+                <text class="rr-qlbl rr-qlbl-1" x="92" y="30" text-anchor="middle" font-family="FoundersGrotesk,sans-serif">
                   <tspan x="92" font-size="13" font-weight="600" fill="rgba(255,255,255,0.88)">Low reward</tspan>
                   <tspan x="92" dy="16" font-size="12" font-weight="500" fill="rgba(255,255,255,0.68)">Low risk</tspan>
                 </text>
-                <text x="197" y="28" text-anchor="middle" font-family="FoundersGrotesk,sans-serif">
+                <text class="rr-qlbl rr-qlbl-sweet" x="197" y="28" text-anchor="middle" font-family="FoundersGrotesk,sans-serif">
                   <tspan x="197" font-size="14" font-weight="600" fill="#F3DA41">High reward</tspan>
                   <tspan x="197" dy="16" font-size="12" font-weight="600" fill="rgba(243,218,65,0.95)">Low risk ✦</tspan>
                 </text>
-                <text x="92" y="84" text-anchor="middle" font-family="FoundersGrotesk,sans-serif">
+                <text class="rr-qlbl rr-qlbl-3" x="92" y="84" text-anchor="middle" font-family="FoundersGrotesk,sans-serif">
                   <tspan x="92" font-size="13" font-weight="600" fill="rgba(255,255,255,0.88)">Low reward</tspan>
                   <tspan x="92" dy="16" font-size="12" font-weight="500" fill="rgba(255,255,255,0.68)">High risk</tspan>
                 </text>
-                <text x="197" y="84" text-anchor="middle" font-family="FoundersGrotesk,sans-serif">
+                <text class="rr-qlbl rr-qlbl-4" x="197" y="84" text-anchor="middle" font-family="FoundersGrotesk,sans-serif">
                   <tspan x="197" font-size="13" font-weight="600" fill="rgba(255,255,255,0.88)">High reward</tspan>
                   <tspan x="197" dy="16" font-size="12" font-weight="500" fill="rgba(255,255,255,0.68)">High risk</tspan>
                 </text>
@@ -309,6 +567,7 @@
               <div class="fw-pt fw-pt-con"><span class="fw-icon fw-icon-con"><svg viewBox="0 0 24 24"><path d="M12 3 22 20H2L12 3z"/><line x1="12" y1="9" x2="12" y2="14"/><circle cx="12" cy="17.5" r="1" fill="currentColor" stroke="none"/></svg></span>Can favour short-term over long-term</div>
             </div>
           </div>
+
         </div>
         <div class="footnote">No single method is perfect - the goal is to avoid the biggest mistakes</div>
       </div>
@@ -339,9 +598,25 @@
             <div class="principle-n">03</div>
             <div class="principle-body">
               <div class="principle-title">AI is pretty good at ICE and RICE</div>
-              <div class="principle-detail">Once it has good context at least...</div>
+              <div class="principle-detail">Once it has good context at least. Every score you adjust is a delta it learns from for next time.</div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S6b · SECTION DIVIDER - OTHER CEREMONIES ════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="rules">
+        <div class="rule-h" style="top:38%"></div>
+      </div>
+      <div class="slide-content">
+        <div class="sec-div-wrap">
+          <div class="sec-div-eyebrow">Sprint Ceremonies</div>
+          <div class="sec-div-title">After planning</div>
+          <div class="sec-div-sub">Standups, Show & Tell, and Retrospectives - the rituals that keep the team aligned, shipping, and improving.</div>
         </div>
       </div>
     </div>
@@ -404,7 +679,7 @@
             </div>
           </div>
         </div>
-        <div class="footnote">1 hr · end of sprint · surface what to change, drop, and keep</div>
+        <div class="footnote">1 hr · end of sprint · the team-level loop - feed what you learn back into how you and your agents work</div>
       </div>
     </div>
   </div>
@@ -469,7 +744,7 @@
           <div class="two-col-row">
             <div class="col-left"><span class="col-icon icon-x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Not documenting sprints</div>
             <div class="col-arrow">→</div>
-            <div class="col-right"><span class="col-icon icon-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Track your learnings every cycle</div>
+            <div class="col-right"><span class="col-icon icon-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Track learnings for recursion</div>
           </div>
         </div>
       </div>
@@ -492,8 +767,47 @@
     </div>
   </div>
 
-  <!-- ══ S10 · TWO APPROACHES TO VALUE ═══════════════════════════ -->
+  <!-- ══ S9a · WHY ARE WE HERE ═══════════════════════════════════ -->
   <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="hb-header">
+          <div class="hb-eyebrow">Hacky Building</div>
+          <div class="hb-title">Why are we here?</div>
+          <div class="hb-rule"></div>
+        </div>
+        <div class="hb-body-center">
+          <div class="hb-statement">We <em>build</em> things to validate our<br>biggest assumptions</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S9b · WE WANT TO SET UP TO ══════════════════════════════ -->
+  <div class="slide s15">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="hb-header">
+          <div class="hb-eyebrow">Hacky Building</div>
+          <div class="hb-title">We want to set up to:</div>
+          <div class="hb-rule"></div>
+        </div>
+        <div class="hb-items">
+          <div class="hb-item hb-item-1">
+            <div class="hb-item-num">01</div>
+            <div class="hb-item-label">Build value quickly</div>
+          </div>
+          <div class="hb-item hb-item-2">
+            <div class="hb-item-num">02</div>
+            <div class="hb-item-label">Adapt if we have to</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S10 · TWO APPROACHES TO VALUE ═══════════════════════════ -->
+  <div class="slide s10" data-steps="2">
     <div class="slide-inner">
       <div class="slide-content">
         <div class="two-graphs-wrap">
@@ -509,15 +823,15 @@
                     <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
                   </linearGradient>
                 </defs>
-                <line x1="24" y1="116" x2="224" y2="116" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-                <line x1="24" y1="20" x2="24" y2="116" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-                <text x="124" y="132" font-size="9" fill="rgba(255,255,255,0.35)" text-anchor="middle" font-family="FoundersGrotesk, sans-serif">Time</text>
-                <text x="8" y="68" font-size="9" fill="rgba(255,255,255,0.35)" text-anchor="middle" transform="rotate(-90,8,68)" font-family="FoundersGrotesk, sans-serif">Value</text>
-                <path d="M24,112 L160,108 L163,28 L224,24 L224,116 Z" fill="url(#ga)"/>
-                <polyline points="24,112 160,108 163,28 224,24" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2.5" stroke-linejoin="round"/>
-                <circle cx="163" cy="28" r="4" fill="var(--accent)"/>
-                <text x="170" y="26" font-size="9" fill="var(--accent)" font-family="FoundersGrotesk, sans-serif" font-weight="600">Launch</text>
-                <text x="78" y="106" font-size="9" fill="rgba(255,255,255,0.3)" font-family="FoundersGrotesk, sans-serif">Busy building</text>
+                <line class="ga-axes" x1="24" y1="116" x2="224" y2="116" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <line class="ga-axes" x1="24" y1="20" x2="24" y2="116" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <text class="ga-axes" x="124" y="132" font-size="9" fill="rgba(255,255,255,0.35)" text-anchor="middle" font-family="FoundersGrotesk, sans-serif">Time</text>
+                <text class="ga-axes" x="8" y="68" font-size="9" fill="rgba(255,255,255,0.35)" text-anchor="middle" transform="rotate(-90,8,68)" font-family="FoundersGrotesk, sans-serif">Value</text>
+                <path class="ga-fill" d="M24,112 L160,108 L163,28 L224,24 L224,116 Z" fill="url(#ga)"/>
+                <polyline class="ga-line" points="24,112 160,108 163,28 224,24" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2.5" stroke-linejoin="round"/>
+                <circle class="ga-dot" cx="163" cy="28" r="4" fill="var(--accent)"/>
+                <text class="ga-launch-text" x="170" y="20" font-size="9" fill="var(--accent)" font-family="FoundersGrotesk, sans-serif" font-weight="600">Launch</text>
+                <text class="ga-busy-label" x="78" y="106" font-size="9" fill="rgba(255,255,255,0.3)" font-family="FoundersGrotesk, sans-serif">Busy building</text>
               </svg>
             </div>
           </div>
@@ -533,19 +847,33 @@
                     <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
                   </linearGradient>
                 </defs>
-                <line x1="24" y1="116" x2="224" y2="116" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-                <line x1="24" y1="20" x2="24" y2="116" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-                <text x="124" y="132" font-size="9" fill="rgba(255,255,255,0.35)" text-anchor="middle" font-family="FoundersGrotesk, sans-serif">Time</text>
-                <text x="8" y="68" font-size="9" fill="rgba(255,255,255,0.35)" text-anchor="middle" transform="rotate(-90,8,68)" font-family="FoundersGrotesk, sans-serif">Value</text>
-                <path d="M24,112 L70,112 L70,88 L116,88 L116,62 L162,62 L162,36 L224,36 L224,116 Z" fill="url(#gb)"/>
-                <polyline points="24,112 70,112 70,88 116,88 116,62 162,62 162,36 224,36" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2.5" stroke-linejoin="round"/>
-                <circle cx="70" cy="88" r="4" fill="var(--accent)"/><circle cx="116" cy="62" r="4" fill="var(--accent)"/><circle cx="162" cy="36" r="4" fill="var(--accent)"/>
-                <text x="47" y="128" font-size="8.5" fill="rgba(255,255,255,0.3)" text-anchor="middle" font-family="FoundersGrotesk, sans-serif">Sprint 1</text>
-                <text x="93" y="128" font-size="8.5" fill="rgba(255,255,255,0.3)" text-anchor="middle" font-family="FoundersGrotesk, sans-serif">Sprint 2</text>
-                <text x="139" y="128" font-size="8.5" fill="rgba(255,255,255,0.3)" text-anchor="middle" font-family="FoundersGrotesk, sans-serif">Sprint 3</text>
+                <line class="gb-axes" x1="24" y1="116" x2="224" y2="116" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <line class="gb-axes" x1="24" y1="20" x2="24" y2="116" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <text class="gb-axes" x="124" y="132" font-size="9" fill="rgba(255,255,255,0.35)" text-anchor="middle" font-family="FoundersGrotesk, sans-serif">Time</text>
+                <text class="gb-axes" x="8" y="68" font-size="9" fill="rgba(255,255,255,0.35)" text-anchor="middle" transform="rotate(-90,8,68)" font-family="FoundersGrotesk, sans-serif">Value</text>
+                <path class="gb-fill" d="M24,112 L74,112 L74,88 L124,88 L124,62 L174,62 L174,36 L224,36 L224,116 Z" fill="url(#gb)"/>
+                <polyline class="gb-line" points="24,112 74,112 74,88 124,88 124,62 174,62 174,36 224,36" fill="none" stroke="rgba(255,255,255,0.75)" stroke-width="2.5" stroke-linejoin="round"/>
+                <circle class="gb-dot gb-dot-1" cx="74" cy="88" r="4" fill="var(--accent)"/>
+                <circle class="gb-dot gb-dot-2" cx="124" cy="62" r="4" fill="var(--accent)"/>
+                <circle class="gb-dot gb-dot-3" cx="174" cy="36" r="4" fill="var(--accent)"/>
+                <text class="gb-label gb-label-1" x="49" y="128" font-size="8.5" fill="rgba(255,255,255,0.3)" text-anchor="middle" font-family="FoundersGrotesk, sans-serif">Sprint 1</text>
+                <text class="gb-label gb-label-2" x="99" y="128" font-size="8.5" fill="rgba(255,255,255,0.3)" text-anchor="middle" font-family="FoundersGrotesk, sans-serif">Sprint 2</text>
+                <text class="gb-label gb-label-3" x="149" y="128" font-size="8.5" fill="rgba(255,255,255,0.3)" text-anchor="middle" font-family="FoundersGrotesk, sans-serif">Sprint 3</text>
               </svg>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S10b · GOING FROM BLACK BOX TO LAYERS ═══════════════════ -->
+  <div class="slide s17">
+    <div class="slide-inner">
+      <div class="hb-orb"></div>
+      <div class="slide-content">
+        <div class="hb-body-center" style="padding: 0;">
+          <div class="hb-title">How do we <em>break down</em><br>technical products?</div>
         </div>
       </div>
     </div>
@@ -581,7 +909,7 @@
             <path d="M110 260 C165 260 205 232 240 200" fill="none" stroke="rgba(255,255,255,0.70)" stroke-width="2" stroke-linecap="round" marker-end="url(#bubble-arrow)"/>
           </svg>
         </div>
-        <div class="footnote">The goal is to invest in the proprietary layer - everything else can be bought, generated, or delegated</div>
+        <div class="footnote">The goal is to invest in the proprietary layer. Everything else can be bought, generated, or delegated</div>
       </div>
     </div>
   </div>
@@ -598,22 +926,22 @@
           </div>
           <div class="sauce-grid">
             <div class="sauce-card">
-              <div class="sauce-image-slot">Image</div>
-              <div class="sauce-domain">Pictura Bio</div>
-              <div class="sauce-example">A patented universal pathogen label plus a growing clinical image dataset - every new sample makes the diagnostic model harder to copy.</div>
+              <div class="sauce-image-slot"><img src="peptone.jpeg" alt="Peptone protein structure"></div>
+              <div class="sauce-domain">Peptone</div>
+              <div class="sauce-example">AI design model for non-alphafold proteins</div>
             </div>
             <div class="sauce-card">
-              <div class="sauce-image-slot">Image</div>
-              <div class="sauce-domain">Sereact</div>
-              <div class="sauce-example">A live robot fleet producing real manipulation data at scale - the data moat behind a general-purpose robotic brain.</div>
+              <div class="sauce-image-slot"><img src="prospectral.webp" alt="Prospectral hyperspectral camera"></div>
+              <div class="sauce-domain">Prospectral</div>
+              <div class="sauce-example">Optimisation layer turning conventional cameras hyperspectral</div>
             </div>
             <div class="sauce-card">
-              <div class="sauce-image-slot">Image</div>
-              <div class="sauce-domain">Fairmat</div>
-              <div class="sauce-example">A replicable automated factory plus patented cold-plasma recycling - turning messy carbon-fibre waste into qualified industrial material.</div>
+              <div class="sauce-image-slot"><img src="enzidia.png" alt="Enzidia enzyme engineering"></div>
+              <div class="sauce-domain">Enzidia</div>
+              <div class="sauce-example">Enzyme engineering ML for manufacturing</div>
             </div>
           </div>
-          <div class="sauce-bottom">VCs love the loop: proprietary process → scarce data → better product → more data.</div>
+          <div class="sauce-bottom">VCs love the cycle: proprietary process → scarce data → better product → more data.</div>
         </div>
       </div>
     </div>
@@ -623,7 +951,7 @@
   <div class="slide">
     <div class="slide-inner">
       <div class="slide-content">
-        <div class="shortcuts-title">A few shortcuts...</div>
+        <div class="shortcuts-title">Outside of secret sauce, we can shortcut...</div>
         <div class="shortcuts-map">
           <div class="shortcut-bubble sb-cursor"><span class="shortcut-logo"><img src="logos/cursor-logo.svg" alt="Cursor"></span><span>Vibe<br>coding</span></div>
           <div class="shortcut-bubble sb-zapier"><span class="shortcut-logo"><img src="logos/zapier.svg" alt="Zapier"></span><span>No/low-code<br>automation</span></div>
@@ -659,6 +987,63 @@
     </div>
   </div>
 
+  <!-- ══ S13b · THINKING OUTSIDE THE BOX ════════════════════════ -->
+  <div class="slide s-outside-box">
+    <div class="slide-inner">
+      <div class="rules">
+        <div class="rule-h" style="top:58px"></div>
+      </div>
+      <div class="outside-orb outside-orb-yellow"></div>
+      <div class="outside-orb outside-orb-teal"></div>
+      <div class="slide-content">
+        <div class="outside-eyebrow">Putting it together</div>
+        <div class="outside-center">
+          <div class="outside-title">Protect your sauce, shortcut the rest</div>
+          <div class="outside-sub">Spend your time only on what's proprietary.<br>Buy or generate everything else.<br>Prove one slice and raise to fund the next.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S13c · FOR EXAMPLE - FLOATILLA ══════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="rules">
+        <div class="rule-h" style="top:96px"></div>
+      </div>
+      <div class="slide-content">
+        <div class="fex-header">
+          <div class="fex-eyebrow">For Example</div>
+          <div class="fex-title">Getting to a £30M floatilla</div>
+        </div>
+        <div class="fex-floatilla-grid">
+          <div class="fex-img-main">
+            <img src="drift-30m.png" alt="£30M floatilla" class="fex-img-fill">
+          </div>
+          <div class="fex-img-stack">
+            <div class="fex-img-item">
+              <img src="drift-500k.png" alt="£500k prototype" class="fex-img-fill">
+            </div>
+            <div class="fex-img-item">
+              <img src="drift-free.png" alt="Free simulation" class="fex-img-fill">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S12d · INTERSTITIAL - HOW DO I KNOW IT'S WORKING? ════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="hb-body-center">
+          <div class="hb-statement">Done a sprint.<br>Made something.<br>How do I know if it&rsquo;s working?</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ══ S13 · SECTION - DATA ══════════════════════════════════════ -->
   <div class="slide">
     <div class="slide-inner">
@@ -667,7 +1052,6 @@
       </div>
       <div class="slide-content">
         <div class="sec-div-wrap">
-          <div class="sec-div-eyebrow">Product &amp; Tech</div>
           <div class="sec-div-title">Data<br>Management</div>
           <div class="sec-div-sub">Your data flywheel is the gap between what your model predicts and what your experts actually do. Log it, retrain on it - and watch predictions converge on human judgement.</div>
         </div>
@@ -680,41 +1064,47 @@
     <div class="slide-inner">
       <div class="slide-content">
         <div class="data-cycle-wrap">
-          <div class="data-cycle-header">The AI data flywheel</div>
-          <div class="data-cycle-grid">
-            <div class="data-step">
-              <div class="data-step-n">01</div>
-              <div class="data-step-title">Define the delta</div>
-              <div class="data-step-body">Where does your model diverge from what human experts actually do? That gap - override rate, edit rate, correction frequency - is your objective.</div>
+          <div class="data-cycle-header">The data flywheel</div>
+          <div class="fly-loop">
+            <svg class="fly-loop-svg" viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <marker id="fly-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
+                  <path d="M0,1 L6,4 L0,7" fill="none" stroke="#F3DA41" stroke-width="1.3"/>
+                </marker>
+              </defs>
+              <circle cx="380" cy="180" r="104" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+              <path class="fly-arc fly-arc-1" d="M412.1,81.1 A104 104 0 0 1 478.9,147.9" fill="none" stroke="rgba(243,218,65,0.6)" stroke-width="2.2" stroke-linecap="round" marker-end="url(#fly-arrow)"/>
+              <path class="fly-arc fly-arc-2" d="M478.9,212.1 A104 104 0 0 1 412.1,278.9" fill="none" stroke="rgba(243,218,65,0.6)" stroke-width="2.2" stroke-linecap="round" marker-end="url(#fly-arrow)"/>
+              <path class="fly-arc fly-arc-3" d="M347.9,278.9 A104 104 0 0 1 281.1,212.1" fill="none" stroke="rgba(243,218,65,0.6)" stroke-width="2.2" stroke-linecap="round" marker-end="url(#fly-arrow)"/>
+              <path class="fly-arc fly-arc-4" d="M281.1,147.9 A104 104 0 0 1 347.9,81.1" fill="none" stroke="rgba(243,218,65,0.6)" stroke-width="2.2" stroke-linecap="round" marker-end="url(#fly-arrow)"/>
+              <circle class="fly-dot" cx="380" cy="76" r="6" fill="#F3DA41"/>
+              <circle class="fly-dot" cx="484" cy="180" r="6" fill="#F3DA41"/>
+              <circle class="fly-dot" cx="380" cy="284" r="6" fill="#F3DA41"/>
+              <circle class="fly-dot" cx="276" cy="180" r="6" fill="#F3DA41"/>
+            </svg>
+            <div class="fly-node fly-node-top">
+              <div class="fly-node-k">01 &middot; Measure</div>
+              <div class="fly-node-t">Measure the delta</div>
+              <div class="fly-node-d">Override / edit rate vs your experts</div>
             </div>
-            <div class="flow-arr">→</div>
-            <div class="data-step">
-              <div class="data-step-n">02</div>
-              <div class="data-step-title">Target convergence</div>
-              <div class="data-step-body">What does closing the gap look like? Set a measurable convergence signal - e.g. override rate drops from 40% to under 10%.</div>
+            <div class="fly-node fly-node-right">
+              <div class="fly-node-k">02 &middot; Capture</div>
+              <div class="fly-node-t">Log the delta</div>
+              <div class="fly-node-d">Every override = one labelled example</div>
             </div>
-            <div class="flow-arr">→</div>
-            <div class="data-step">
-              <div class="data-step-n">03</div>
-              <div class="data-step-title">Assess current state</div>
-              <div class="data-step-body">Where is data today? Constraints: hosting, streaming, tooling, regulations.</div>
+            <div class="fly-node fly-node-bottom">
+              <div class="fly-node-k">03 &middot; Retrain</div>
+              <div class="fly-node-t">Retrain on disagreements</div>
+              <div class="fly-node-d">Weekly cycle - no manual labelling</div>
             </div>
-            <div class="data-step">
-              <div class="data-step-n">04</div>
-              <div class="data-step-title">Log the delta</div>
-              <div class="data-step-body">Every prediction a human overrides or corrects is a labelled training example. Design your system to capture these disagreements automatically.</div>
+            <div class="fly-node fly-node-left">
+              <div class="fly-node-k">04 &middot; Converge</div>
+              <div class="fly-node-t">Delta shrinks</div>
+              <div class="fly-node-d">Predictions converge on expert judgement</div>
             </div>
-            <div class="flow-arr">→</div>
-            <div class="data-step">
-              <div class="data-step-n">05</div>
-              <div class="data-step-title">Retrain on disagreements</div>
-              <div class="data-step-body">Use the gap between model output and human action as your training set. Weekly retraining cycles compound improvements without anyone manually labelling data.</div>
-            </div>
-            <div class="flow-arr">→</div>
-            <div class="data-step" style="background:rgba(243,218,65,0.05);border-color:rgba(243,218,65,0.15)">
-              <div class="data-step-n">→</div>
-              <div class="data-step-title">Delta shrinks</div>
-              <div class="data-step-body">Model output converges on expert judgement. Each retraining cycle compounds your moat - not just speed, but accumulated domain knowledge no competitor can buy.</div>
+            <div class="fly-center">
+              <div class="fly-center-t">Moat compounds</div>
+              <div class="fly-center-d">every spin, knowledge no competitor can buy</div>
             </div>
           </div>
         </div>
@@ -723,61 +1113,174 @@
     </div>
   </div>
 
-  <!-- ══ S15 · SMART GOALS - ANNOTATED ════════════════════════════ -->
+  <!-- ══ S15 · SMART GOALS - MINESHAFT ════════════════════════════ -->
   <div class="slide">
     <div class="slide-inner">
       <div class="slide-content">
-        <div class="annotated-wrap">
-          <div class="annotated-eyebrow">Setting a great goal - example</div>
-          <div class="annotated-goal">
-            "Can my drone's pest model close the gap with agronomist judgement - reducing expert overrides from <mark>40% to below 10%</mark> of predictions by <mark>retraining weekly</mark> on corrected field data over the <mark>next three months</mark>?"
+        <div class="goals-slide">
+          <div class="goals-eyebrow">Data Management</div>
+          <div class="goals-heading">Sending drones into a mineshaft – setting goals</div>
+          <div class="goals-rule-h"></div>
+
+          <div class="goals-q-wrap">
+            <div class="goals-q">Can my <span class="ghl-green">hyperspectral</span> <span class="ghl-yellow">camera</span> <span class="ghl-green">drone</span> identify ore-grade zones</div>
+            <div class="goals-q">with <span class="ghl-yellow ghl-bold">&gt;90% accuracy</span> vs lab results over the next <span class="ghl-green">three months</span>?</div>
           </div>
-          <div class="annotation-chips">
-            <span class="annotation-chip">Delta target</span>
-            <span class="annotation-chip">Convergence signal</span>
-            <span class="annotation-chip">Retraining cadence</span>
-            <span class="annotation-chip">Time-bound</span>
-            <span class="annotation-chip">Expert-model gap</span>
+
+          <div class="goals-key">
+            <div class="goals-key-item k-green">
+              <div class="goals-key-phrase ghl-green">Hyperspectral</div>
+              <div class="goals-key-lbl">Multiple data layers</div>
+              <div class="goals-key-txt">Many spectral bands to capture, store &amp; process</div>
+            </div>
+            <div class="goals-key-item k-yellow">
+              <div class="goals-key-phrase ghl-yellow">Camera</div>
+              <div class="goals-key-lbl">Data format</div>
+              <div class="goals-key-txt">What resolution &amp; format will it output?</div>
+            </div>
+            <div class="goals-key-item k-green">
+              <div class="goals-key-phrase ghl-green">Drone</div>
+              <div class="goals-key-lbl">Condition complexity</div>
+              <div class="goals-key-txt">Harsh, variable underground conditions</div>
+            </div>
+            <div class="goals-key-item k-yellow">
+              <div class="goals-key-phrase ghl-yellow">&gt;90% accuracy</div>
+              <div class="goals-key-lbl">Ambitious but measurable</div>
+              <div class="goals-key-txt">A clear, quantified bar for success</div>
+            </div>
+            <div class="goals-key-item k-green">
+              <div class="goals-key-phrase ghl-green">Three months</div>
+              <div class="goals-key-lbl">Time-boxed</div>
+              <div class="goals-key-txt">A deadline to measure progress against</div>
+            </div>
           </div>
         </div>
-        <div class="footnote">Data management - setting goals</div>
       </div>
     </div>
   </div>
 
-  <!-- ══ S16 · DATA ACCELERATION ═══════════════════════════════════ -->
+  <!-- ══ S16 · DATA MANAGEMENT ════════════════════════════════════ -->
   <div class="slide">
     <div class="slide-inner">
       <div class="slide-content">
-        <div class="dataacc-wrap">
-          <div class="dataacc-title">Making data faster</div>
-          <div class="dataacc-grid">
-            <div class="dataacc-card">
-              <div class="dataacc-label">Data Warehouses</div>
-              <div class="dataacc-card-title">One home for all sources</div>
-              <div class="dataacc-body">Start small - scale collection as understanding grows. Well-integrated space across multiple data sources.</div>
-              <div class="dataacc-tools"><span class="dataacc-tool">Snowflake</span><span class="dataacc-tool">BigQuery</span></div>
+        <div class="dm-wrap">
+          <div class="dm-header">
+            <div class="dm-eyebrow">Data Management</div>
+            <div class="dm-title">How do we manage &amp; process data (esp for AI)?</div>
+          </div>
+          <div class="dm-rule"></div>
+          <div class="dm-grid">
+            <div class="dm-col">
+              <div class="dm-item">
+                <div class="dm-icon-circle">
+                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                    <line x1="20" y1="6" x2="20" y2="34" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="9" y1="13" x2="31" y2="27" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="9" y1="27" x2="31" y2="13" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="dm-item-text">
+                  <div class="dm-item-title">It's okay to start small</div>
+                  <div class="dm-item-body">Scale data collection as your capability and understanding of your user/product grows</div>
+                </div>
+              </div>
+              <div class="dm-item">
+                <div class="dm-icon-circle">
+                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                    <circle cx="20" cy="20" r="3.5" fill="white"/>
+                    <circle cx="8" cy="11" r="2.5" stroke="white" stroke-width="1.5"/>
+                    <circle cx="32" cy="11" r="2.5" stroke="white" stroke-width="1.5"/>
+                    <circle cx="8" cy="29" r="2.5" stroke="white" stroke-width="1.5"/>
+                    <circle cx="32" cy="29" r="2.5" stroke="white" stroke-width="1.5"/>
+                    <line x1="17.2" y1="18.2" x2="10.2" y2="13" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+                    <line x1="22.8" y1="18.2" x2="29.8" y2="13" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+                    <line x1="17.2" y1="21.8" x2="10.2" y2="27" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+                    <line x1="22.8" y1="21.8" x2="29.8" y2="27" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="dm-item-text">
+                  <div class="dm-item-title">Data warehouses</div>
+                  <div class="dm-item-body">Services like Snowflake offer a well-integrated space for multiple data sources</div>
+                </div>
+              </div>
+              <div class="dm-item">
+                <div class="dm-icon-circle">
+                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                    <rect x="7" y="7" width="16" height="22" rx="2" stroke="white" stroke-width="1.5"/>
+                    <rect x="15" y="11" width="16" height="22" rx="2" stroke="white" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <div class="dm-item-text">
+                  <div class="dm-item-title">Using AI</div>
+                  <div class="dm-item-body">Embed data and use vector databases to semantically search and "understand" qualitative data (without structure)</div>
+                </div>
+              </div>
             </div>
-            <div class="dataacc-card">
-              <div class="dataacc-label">Pipelines</div>
-              <div class="dataacc-card-title">Move data without code</div>
-              <div class="dataacc-body">Data scattered across services? Move it between systems automatically - no engineering required.</div>
-              <div class="dataacc-tools"><span class="dataacc-tool">Fivetran</span><span class="dataacc-tool">Palantir Foundry</span></div>
-            </div>
-            <div class="dataacc-card">
-              <div class="dataacc-label">Retraining loops</div>
-              <div class="dataacc-card-title">Close the gap automatically</div>
-              <div class="dataacc-body">Log every human override and correction as structured signal. Weekly retraining on these deltas closes the model-expert gap without anyone labelling data manually.</div>
-              <div class="dataacc-tools"><span class="dataacc-tool">Dispatch</span><span class="dataacc-tool">Fine-tuning</span><span class="dataacc-tool">RLHF</span></div>
-            </div>
-            <div class="dataacc-card">
-              <div class="dataacc-label">Free Help</div>
-              <div class="dataacc-card-title">Cloud providers build for you</div>
-              <div class="dataacc-body">Google, Amazon, and Azure offer free solutions engineering if they anticipate a significant AI spend down the line.</div>
-              <div class="dataacc-tools"><span class="dataacc-tool">AWS</span><span class="dataacc-tool">GCP</span><span class="dataacc-tool">Azure</span></div>
+            <div class="dm-col">
+              <div class="dm-item">
+                <div class="dm-icon-circle">
+                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                    <rect x="6" y="12" width="24" height="17" rx="2" stroke="white" stroke-width="1.5"/>
+                    <rect x="9" y="9" width="22" height="4" rx="1.5" stroke="white" stroke-width="1.2"/>
+                    <line x1="18" y1="18" x2="22" y2="18" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="20" y1="16" x2="20" y2="23" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="dm-item-text">
+                  <div class="dm-item-title">Free help from cloud providers</div>
+                  <div class="dm-item-body">Google, Amazon etc provide free contractors to build for you if they anticipate a big enough AI spend later</div>
+                </div>
+              </div>
+              <div class="dm-item">
+                <div class="dm-icon-circle">
+                  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+                    <path d="M 8 16 C 8 16 16 16 20 22 C 24 28 32 28 32 28" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    <polyline points="28,24 32,28 28,32" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M 32 20 C 32 20 24 20 20 14 C 16 8 8 8 8 8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                    <polyline points="12,12 8,8 12,4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="dm-item-text">
+                  <div class="dm-item-title">Pipelines</div>
+                  <div class="dm-item-body">Data sources scattered? Services like Fivetran and Palantir Foundry move data between services without code</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S16b · SECTION DIVIDER - WORKING TACTICALLY ═════════════ -->
+  <div class="slide s-outside-box s-working-tactically">
+    <div class="slide-inner">
+      <div class="rules">
+        <div class="rule-h" style="top:58px"></div>
+      </div>
+      <div class="outside-orb outside-orb-wt"></div>
+      <div class="slide-content">
+        <div class="outside-eyebrow">Getting Tactical</div>
+        <div class="outside-center">
+          <div class="outside-title">Working tactically</div>
+          <div class="outside-sub">Some extra tips for the road</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S16c · HOW DO I MAKE THE RIGHT DECISIONS ══════════════════ -->
+  <div class="slide s-decisions">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="dq-center">How do I make the right decisions?</div>
+        <div class="dq dq-1">How quickly<br>can we build?</div>
+        <div class="dq dq-2">How easily does<br>this scale?</div>
+        <div class="dq dq-3">Will this be hard<br>to maintain?</div>
+        <div class="dq dq-4">Is my CTO familiar<br>with x technology?</div>
+        <div class="dq dq-5">Do I need more<br>redundancy here?</div>
+        <div class="dq dq-6">How much does<br>this cost per user?</div>
+        <div class="dq dq-7">Does it do everything<br>I want it to do?</div>
       </div>
     </div>
   </div>
@@ -816,8 +1319,8 @@
             <rect x="218" y="87" width="64" height="22" rx="4" fill="#F3DA41"/>
             <text x="250" y="102" text-anchor="middle" font-size="10.5" font-weight="600" fill="#181200" font-family="FoundersGrotesk,sans-serif">Speed</text>
             <!-- Team familiarity chip -->
-            <rect x="68" y="188" width="116" height="20" rx="10" fill="none" stroke="#7B9BD8" stroke-width="1"/>
-            <text x="126" y="202" text-anchor="middle" font-size="9.5" fill="#7B9BD8" font-family="FoundersGrotesk,sans-serif">Team familiarity</text>
+            <rect x="48" y="168" width="116" height="20" rx="10" fill="none" stroke="#7B9BD8" stroke-width="1"/>
+            <text x="106" y="182" text-anchor="middle" font-size="9.5" fill="#7B9BD8" font-family="FoundersGrotesk,sans-serif">Team familiarity</text>
             <!-- Scalability chip -->
             <rect x="776" y="45" width="205" height="22" rx="4" fill="none" stroke="#E07B5A" stroke-width="1"/>
             <text x="878" y="60" text-anchor="middle" font-size="9.5" fill="#E07B5A" font-family="FoundersGrotesk,sans-serif">Scalability &amp; dependence</text>
@@ -933,6 +1436,7 @@
               <div class="regs-col-text">Compliance stakeholders often list 900 items, of which you only actually need to complete two to get moving</div>
               <div class="regs-bullets">
                 <div class="regs-bullet">E.g. running a SAQ-D in fintech</div>
+                <div class="regs-bullet">The regulator is there to help you (within their framework)</div>
               </div>
             </div>
           </div>
@@ -952,10 +1456,10 @@
   window.addEventListener('resize', scaleSlides);
   scaleSlides();
 
-  // Lazy-load via IntersectionObserver
   const deck   = document.getElementById('deck');
   const slides = Array.from(document.querySelectorAll('.slide'));
   let cur = 0;
+  let slideStep = 0;
 
   function hud() {
     const pct = ((cur + 1) / slides.length * 100).toFixed(1);
@@ -964,29 +1468,102 @@
   }
   hud();
 
+  // ── ICE score counter animation ───────────────────────────────
+  function runICECounter(card) {
+    const el = card.querySelector('#ice-counter');
+    if (!el) return;
+    el.textContent = '0';
+    const target = 336;
+    const duration = 900;
+    const delay = 1150; // ms after reveal - starts as result box lands
+    const startTime = performance.now() + delay;
+    function tick(now) {
+      if (now < startTime) { requestAnimationFrame(tick); return; }
+      const t = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = Math.round(eased * target);
+      if (t < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  // ── Reset all revealed cards on a stepped slide ───────────────
+  function resetSlideSteps(slide) {
+    slide.querySelectorAll('.fw-card.revealed').forEach(c => {
+      c.classList.remove('revealed');
+      const counter = c.querySelector('#ice-counter');
+      if (counter) counter.textContent = '0';
+    });
+    const maxSteps = parseInt(slide.dataset.steps || '0');
+    for (let i = 1; i <= maxSteps; i++) slide.classList.remove('step-' + i);
+  }
+
+  // ── Reveal one step ───────────────────────────────────────────
+  function revealStep(slide, step) {
+    // CSS-driven reveal: add step-N class to the slide
+    slide.classList.add('step-' + step);
+    // Card-driven reveal (e.g. fw-cards with data-step)
+    const card = slide.querySelector(`.fw-card[data-step="${step}"]`);
+    if (!card) return;
+    card.classList.add('revealed');
+    if (step === 1) runICECounter(card);
+  }
+
+  // ── Hide one step (going backwards) ──────────────────────────
+  function hideStep(slide, step) {
+    slide.classList.remove('step-' + step);
+    const card = slide.querySelector(`.fw-card[data-step="${step}"]`);
+    if (!card) return;
+    card.classList.remove('revealed');
+    const counter = card.querySelector('#ice-counter');
+    if (counter) counter.textContent = '0';
+  }
+
+  // ── IntersectionObserver ──────────────────────────────────────
   const observer = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
         e.target.classList.add('visible');
-        cur = slides.indexOf(e.target);
-        hud();
+        const newCur = slides.indexOf(e.target);
+        if (newCur !== cur) {
+          resetSlideSteps(slides[cur]);
+          resetSlideSteps(e.target);
+          slideStep = 0;
+          cur = newCur;
+          hud();
+        }
       }
     });
   }, { root: deck, threshold: 0.5 });
 
   slides.forEach(s => observer.observe(s));
 
-  // Keyboard navigation
+  // ── Keyboard navigation ───────────────────────────────────────
   document.addEventListener('keydown', e => {
     if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') {
       e.preventDefault();
-      if (cur < slides.length - 1) slides[cur + 1].scrollIntoView({ behavior: 'smooth' });
+      const slide = slides[cur];
+      const maxSteps = parseInt(slide.dataset.steps || '0');
+      if (slideStep < maxSteps) {
+        slideStep++;
+        revealStep(slide, slideStep);
+      } else if (cur < slides.length - 1) {
+        slideStep = 0;
+        slides[cur + 1].scrollIntoView({ behavior: 'smooth' });
+      }
     }
     if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
       e.preventDefault();
-      if (cur > 0) slides[cur - 1].scrollIntoView({ behavior: 'smooth' });
+      const slide = slides[cur];
+      if (slideStep > 0) {
+        hideStep(slide, slideStep);
+        slideStep--;
+      } else if (cur > 0) {
+        slides[cur - 1].scrollIntoView({ behavior: 'smooth' });
+      }
     }
   });
+
 </script>
 </body>
 </html>
