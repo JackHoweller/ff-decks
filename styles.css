@@ -421,6 +421,7 @@
 
     /* S9a · centered statement */
     .hb-body-center { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; text-align:center; padding:80px 80px 0; }
+    .center-title-up .hb-body-center { padding:0 80px; }
     .hb-statement { font-size:40px; font-weight:500; line-height:1.35; opacity:0; transform:translateY(10px); transition:opacity 0.55s ease 0.50s, transform 0.55s ease 0.50s; }
     .slide.visible .hb-statement { opacity:1; transform:none; }
     .hb-statement em { font-style:italic; font-weight:700; }
@@ -1065,7 +1066,7 @@
     .goals-rule-h { position:absolute; top:98px; left:52px; right:52px; height:1px; background:var(--rule); opacity:0; transition:opacity 0.4s ease 0.4s; }
     .slide.visible .goals-rule-h { opacity:1; }
     /* Goal question — centred with hand-annotated callouts */
-    .goals-q-wrap { position:absolute; left:184px; right:96px; top:300px; display:flex; align-items:flex-start; gap:14px; opacity:0; transition:opacity 0.55s ease 0.46s; }
+    .goals-q-wrap { position:absolute; left:230px; top:300px; display:flex; align-items:flex-start; gap:14px; opacity:0; transition:opacity 0.55s ease 0.46s; }
     .slide.visible .goals-q-wrap { opacity:1; }
     .goals-q-num { font-family:'FoundersGrotesk',sans-serif; font-size:14px; font-weight:400; line-height:1.6; color:var(--muted); flex-shrink:0; padding-top:2px; }
     .goals-q-lines { flex:1; }
