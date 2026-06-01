@@ -335,11 +335,12 @@
     .fw-diagram::before { content:''; position:absolute; inset:-20%; background:radial-gradient(ellipse at 25% 15%, rgba(255,255,255,0.22) 0%, transparent 55%), radial-gradient(ellipse at 75% 85%, rgba(243,218,65,0.16) 0%, transparent 50%); filter:blur(28px); pointer-events:none; z-index:0; }
     .fw-diagram > * { position:relative; z-index:1; }
     .s5 .fw-card[data-step="1"] .fw-diagram { margin-top:8px; margin-bottom:0; }
-    .ice-row { display:flex; align-items:center; gap:6px; }
-    .ice-box { background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.22); border-radius:8px; padding:7px 8px; text-align:center; flex:1; box-shadow:0 2px 12px rgba(0,0,0,0.18), inset 0 1px 0 rgba(255,255,255,0.14); }
+    .ice-row { display:flex; align-items:center; justify-content:center; gap:6px; flex-wrap:wrap; }
+    .ice-box { background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.22); border-radius:8px; padding:7px 8px; text-align:center; flex:1 1 0; min-width:0; box-shadow:0 2px 12px rgba(0,0,0,0.18), inset 0 1px 0 rgba(255,255,255,0.14); }
     .ice-box-lbl { font-size:8px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.72); }
     .ice-box-val { font-family:'HelveticaNeueLT',sans-serif; font-size:22px; font-weight:300; color:rgba(255,255,255,0.92); line-height:1.1; }
     .ice-op { font-size:15px; font-weight:500; color:rgba(255,255,255,0.55); }
+    .ice-result-row { flex:0 0 100%; display:flex; align-items:center; justify-content:center; gap:10px; margin-top:2px; }
     .ice-result { background:rgba(243,218,65,0.16); border:1px solid rgba(243,218,65,0.42); border-radius:8px; padding:7px 10px; text-align:center; box-shadow:0 0 28px rgba(243,218,65,0.18), inset 0 1px 0 rgba(243,218,65,0.2); }
     .ice-result-lbl { font-size:8px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); }
     .ice-result-val { font-family:'HelveticaNeueLT',sans-serif; font-size:20px; font-weight:300; color:var(--accent); line-height:1.1; }
@@ -1064,7 +1065,7 @@
     .goals-rule-h { position:absolute; top:98px; left:52px; right:52px; height:1px; background:var(--rule); opacity:0; transition:opacity 0.4s ease 0.4s; }
     .slide.visible .goals-rule-h { opacity:1; }
     /* Goal question — centred with hand-annotated callouts */
-    .goals-q-wrap { position:absolute; left:140px; right:140px; top:300px; display:flex; align-items:flex-start; gap:14px; opacity:0; transition:opacity 0.55s ease 0.46s; }
+    .goals-q-wrap { position:absolute; left:184px; right:96px; top:300px; display:flex; align-items:flex-start; gap:14px; opacity:0; transition:opacity 0.55s ease 0.46s; }
     .slide.visible .goals-q-wrap { opacity:1; }
     .goals-q-num { font-family:'FoundersGrotesk',sans-serif; font-size:14px; font-weight:400; line-height:1.6; color:var(--muted); flex-shrink:0; padding-top:2px; }
     .goals-q-lines { flex:1; }
@@ -1770,8 +1771,7 @@
     .s5 .fw-card[data-step="1"].revealed .ice-row > *:nth-child(3) { animation: ice-box-in    0.46s cubic-bezier(0.34,1.56,0.64,1) 0.60s both; }
     .s5 .fw-card[data-step="1"].revealed .ice-row > *:nth-child(4) { animation: ice-op-in     0.28s cubic-bezier(0.34,1.56,0.64,1) 0.84s both; }
     .s5 .fw-card[data-step="1"].revealed .ice-row > *:nth-child(5) { animation: ice-box-in    0.46s cubic-bezier(0.34,1.56,0.64,1) 0.94s both; }
-    .s5 .fw-card[data-step="1"].revealed .ice-row > *:nth-child(6) { animation: ice-op-in     0.28s cubic-bezier(0.34,1.56,0.64,1) 1.16s both; }
-    .s5 .fw-card[data-step="1"].revealed .ice-row > *:nth-child(7) { animation: ice-result-in 0.50s cubic-bezier(0.34,1.56,0.64,1) 1.26s both; }
+    .s5 .fw-card[data-step="1"].revealed .ice-row > *:nth-child(6) { animation: ice-result-in 0.50s cubic-bezier(0.34,1.56,0.64,1) 1.16s both; }
 
     /* Bullets stagger after diagram */
     .s5 .fw-card[data-step="1"].revealed .fw-notes .fw-pt { animation: fw-pt-in 0.30s ease both; }
@@ -1989,6 +1989,7 @@
     .fly-detail-rule { height:1px; background:rgba(255,255,255,0.13); margin:24px 0 34px; opacity:0; transition:opacity 0.5s ease 0.38s; }
     .slide.visible .fly-detail-rule { opacity:1; }
     .fly-detail-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .fly-detail-grid-two { grid-template-columns:repeat(2,1fr); }
     .fly-detail-card { min-height:190px; background:var(--mid); border:1px solid var(--border); border-radius:14px; padding:24px 24px 26px; display:flex; flex-direction:column; opacity:0; transform:translateY(10px); }
     .slide.visible .fly-detail-card { opacity:1; transform:none; }
     .slide.visible .fly-detail-card:nth-child(1) { transition:opacity 0.45s ease 0.48s, transform 0.45s ease 0.48s; }
@@ -1999,6 +2000,14 @@
     .fly-detail-card-d { font-size:13px; color:var(--muted); line-height:1.5; margin-top:14px; }
     .fly-detail-note { margin-top:auto; max-width:780px; font-size:14px; color:rgba(255,255,255,0.72); line-height:1.5; opacity:0; transform:translateY(6px); transition:opacity 0.45s ease 0.88s, transform 0.45s ease 0.88s; }
     .slide.visible .fly-detail-note { opacity:1; transform:none; }
+
+    .feed-title-slide { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:60px 96px 86px; }
+    .feed-title-eyebrow { font-size:10px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent); margin-bottom:18px; opacity:0; transform:translateY(6px); transition:opacity 0.4s ease 0.22s, transform 0.4s ease 0.22s; }
+    .slide.visible .feed-title-eyebrow { opacity:1; transform:none; }
+    .feed-title-main { font-family:'HelveticaNeueLT',sans-serif; font-size:46px; font-weight:300; letter-spacing:-0.025em; line-height:1.08; color:#fff; opacity:0; transform:translateY(10px); transition:opacity 0.55s ease 0.38s, transform 0.55s ease 0.38s; }
+    .slide.visible .feed-title-main { opacity:1; transform:none; }
+    .feed-title-sub { margin-top:22px; font-size:17px; color:var(--muted); opacity:0; transform:translateY(8px); transition:opacity 0.45s ease 0.60s, transform 0.45s ease 0.60s; }
+    .slide.visible .feed-title-sub { opacity:1; transform:none; }
 
     /* S1d · two-step how (reuses .three-step-wrap) */
     .aip-two-step { justify-content:center; }
