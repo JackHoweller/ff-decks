@@ -10,6 +10,14 @@
 
 <div id="progress"><div id="progress-fill"></div></div>
 <div id="counter"></div>
+<button id="fullscreen-toggle" type="button" aria-label="Enter full screen" title="Enter full screen">
+  <svg class="fs-icon fs-enter" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/>
+  </svg>
+  <svg class="fs-icon fs-exit" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/>
+  </svg>
+</button>
 
 <div id="orb-dot"></div>
 <div id="deck">
@@ -59,7 +67,7 @@
             <div class="shift-cycle"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
             <div class="shift-node">Engineering</div>
           </div>
-          <div class="shift-caption">This used to be a masterclass on tightening loops between <em>people</em><br>Product intent &rarr; engineering output &rarr; feedback &rarr; refine.</div>
+          <div class="shift-caption">This used to be a masterclass on tightening loops between <em>people</em><br>Product intent &rarr; engineering output &rarr; get feedback &rarr; refine.</div>
         </div>
       </div>
     </div>
@@ -69,10 +77,6 @@
   <div class="slide">
     <div class="slide-inner">
       <div class="slide-content">
-        <div class="hb-header">
-          <div class="hb-title">Now the loop can run itself</div>
-          <div class="hb-rule"></div>
-        </div>
         <div class="hb-body-center">
           <div class="hb-statement">That gap used to be closed by <em>people</em>.<br>It should be closed by <em class="shift-em-accent">self-improving agents</em>.</div>
         </div>
@@ -129,7 +133,7 @@
         <div class="sec-div-wrap">
           <div class="sec-div-eyebrow"><span class="loop-glyph"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span>The Paradigm Shift</div>
           <div class="sec-div-title">Recursion in agents</div>
-          <div class="sec-div-sub">The shift: from instructing the model step by step &rarr; setting it up to find the <em>delta</em> between its output and yours, and close it itself.</div>
+          <div class="sec-div-sub">The shift: from instructing the model step by step &rarr;<br>setting it up to find the <em>delta</em> between its output and yours, and close it itself.</div>
         </div>
       </div>
     </div>
@@ -280,7 +284,7 @@
         <div class="s2-wrap">
           <div class="s2-left">
             <div class="s2-eyebrow">Agile methodology</div>
-            <div class="s2-def">An iterative process develops a project in small increments, with continuous feedback and improvement based on each cycle.</div>
+            <div class="s2-def">Iterative process &rarr; continuous feedback</div>
             <div class="s2-agile-note">Agile relies on this approach - breaking work into defined sprints with clear goals, reviews, and retrospectives at each stage.</div>
           </div>
           <div class="s2-right">
@@ -400,7 +404,7 @@
         <div class="sec-div-wrap">
           <div class="sec-div-eyebrow">Sprint Ceremonies</div>
           <div class="sec-div-title">Planning</div>
-          <div class="sec-div-sub">The most important ceremony in the sprint - if you get this wrong, everything that follows suffers.</div>
+          <div class="sec-div-sub">The most important part of the sprint. If you get this wrong, everything that follows suffers.</div>
         </div>
       </div>
     </div>
@@ -614,7 +618,6 @@
         <div class="sec-div-wrap">
           <div class="sec-div-eyebrow">Sprint Ceremonies</div>
           <div class="sec-div-title">After planning</div>
-          <div class="sec-div-sub">Standups, Show & Tell, and Retrospectives - the rituals that keep the team aligned, shipping, and improving.</div>
         </div>
       </div>
     </div>
@@ -624,7 +627,7 @@
   <div class="slide">
     <div class="slide-inner">
       <div class="slide-content">
-        <div class="cer-page-title">Stand up &#x2014; what happens in a Standup?</div>
+        <div class="cer-page-title">Standup</div>
         <div class="cer-page-body">
           <div class="cer-page-left">
             <div class="cer-page-step">
@@ -646,7 +649,7 @@
             </div>
           </div>
         </div>
-        <div class="footnote">15 min · every day · keeps the team aligned and unblocked</div>
+        <div class="footnote">15 min · every day</div>
       </div>
     </div>
   </div>
@@ -655,7 +658,7 @@
   <div class="slide">
     <div class="slide-inner">
       <div class="slide-content">
-        <div class="cer-page-title">Retrospective &#x2014; what happens in &#x201C;Retro&#x201D;?</div>
+        <div class="cer-page-title">Retrospective</div>
         <div class="cer-page-body">
           <div class="cer-page-left">
             <div class="cer-page-step">
@@ -677,7 +680,7 @@
             </div>
           </div>
         </div>
-        <div class="footnote">1 hr · end of sprint · the team-level loop - feed what you learn back into how you and your agents work</div>
+        <div class="footnote">1 hr · end of sprint</div>
       </div>
     </div>
   </div>
@@ -686,7 +689,7 @@
   <div class="slide">
     <div class="slide-inner">
       <div class="slide-content">
-        <div class="cer-page-title">Show &amp; Tell &#x2014; what happens in Show &amp; Tell?</div>
+        <div class="cer-page-title">Show &amp; Tell</div>
         <div class="cer-page-body">
           <div class="cer-page-left">
             <div class="cer-page-step">
@@ -708,7 +711,7 @@
             </div>
           </div>
         </div>
-        <div class="footnote">1 hr · end of sprint · demo what shipped and what moved the needle</div>
+        <div class="footnote">1 hr · end of sprint</div>
       </div>
     </div>
   </div>
@@ -749,6 +752,37 @@
     </div>
   </div>
 
+  <!-- ══ S8a · DEEPTECH DATA OBJECTION ════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="hb-header">
+          <div class="hb-eyebrow">Usual rejection</div>
+          <div class="hb-title">"I'm in deeptech - our data doesn't connect to Claude"</div>
+          <div class="hb-rule"></div>
+        </div>
+        <div class="two-col-list" style="top:124px;bottom:72px">
+          <div class="two-col-row">
+            <div class="col-left"><span class="col-icon icon-x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Specialist files, instruments, simulations</div>
+            <div class="col-arrow">→</div>
+            <div class="col-right"><span class="col-icon icon-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Have Claude make an MCP for you</div>
+          </div>
+          <div class="two-col-row">
+            <div class="col-left"><span class="col-icon icon-x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>No off-the-shelf integration exists</div>
+            <div class="col-arrow">→</div>
+            <div class="col-right"><span class="col-icon icon-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>MCP is the integration layer: list, read, query, run</div>
+          </div>
+          <div class="two-col-row">
+            <div class="col-left"><span class="col-icon icon-x"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Your schema is weird, private, or evolving</div>
+            <div class="col-arrow">→</div>
+            <div class="col-right"><span class="col-icon icon-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>Give Claude the docs and examples; it scaffolds the adapter</div>
+          </div>
+        </div>
+        <div class="footnote">Don't wait for a vendor connector - make your own narrow, auditable bridge into the tools Claude needs.</div>
+      </div>
+    </div>
+  </div>
+
   <!-- ══ S9 · SECTION - BUILD ══════════════════════════════════════ -->
   <div class="slide">
     <div class="slide-inner">
@@ -759,7 +793,6 @@
         <div class="sec-div-wrap">
           <div class="sec-div-eyebrow">Product → Build</div>
           <div class="sec-div-title">Hacky<br>Building</div>
-          <div class="sec-div-sub">We build to validate assumptions and generate signal - every human override is a labelled training example your competitors don't have.</div>
         </div>
       </div>
     </div>
@@ -1012,7 +1045,7 @@
       <div class="slide-content">
         <div class="fex-header">
           <div class="fex-eyebrow">For Example</div>
-          <div class="fex-title">Getting to a £30M floatilla</div>
+          <div class="fex-title">Big sauce - getting to a £30M floatilla</div>
         </div>
         <div class="fex-floatilla-grid">
           <div class="fex-img-main">
@@ -1051,7 +1084,7 @@
       <div class="slide-content">
         <div class="sec-div-wrap">
           <div class="sec-div-title">Data<br>Management</div>
-          <div class="sec-div-sub">Your data flywheel is the gap between what your model predicts and what your experts actually do. Log it, retrain on it - and watch predictions converge on human judgement.</div>
+          <div class="sec-div-sub">Setting up data flywheels</div>
         </div>
       </div>
     </div>
@@ -1062,7 +1095,7 @@
     <div class="slide-inner">
       <div class="slide-content">
         <div class="data-cycle-wrap">
-          <div class="data-cycle-header">The data flywheel</div>
+          <div class="data-cycle-header">What is a data flywheel?</div>
           <div class="fly-loop">
             <svg class="fly-loop-svg" viewBox="0 0 760 360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <defs>
@@ -1081,43 +1114,81 @@
               <circle class="fly-dot" cx="276" cy="180" r="6" fill="#F3DA41"/>
             </svg>
             <div class="fly-node fly-node-top">
-              <div class="fly-node-k">01 &middot; Measure</div>
-              <div class="fly-node-t">Measure the delta</div>
-              <div class="fly-node-d">Override / edit rate vs your experts</div>
+              <div class="fly-node-k">01 &middot; Goal</div>
+              <div class="fly-node-t">Start with the business goal</div>
+              <div class="fly-node-d">Name the outcome you want to move</div>
             </div>
             <div class="fly-node fly-node-right">
-              <div class="fly-node-k">02 &middot; Capture</div>
-              <div class="fly-node-t">Log the delta</div>
-              <div class="fly-node-d">Every override = one labelled example</div>
+              <div class="fly-node-k">02 &middot; Understand</div>
+              <div class="fly-node-t">Use data to explain it</div>
+              <div class="fly-node-d">Find the drivers, constraints, and signals</div>
             </div>
             <div class="fly-node fly-node-bottom">
-              <div class="fly-node-k">03 &middot; Retrain</div>
-              <div class="fly-node-t">Retrain on disagreements</div>
-              <div class="fly-node-d">Weekly cycle - no manual labelling</div>
+              <div class="fly-node-k">03 &middot; Feed back</div>
+              <div class="fly-node-t">Put insight into the system</div>
+              <div class="fly-node-d">Agents and workflows adapt from real use</div>
             </div>
             <div class="fly-node fly-node-left">
-              <div class="fly-node-k">04 &middot; Converge</div>
-              <div class="fly-node-t">Delta shrinks</div>
-              <div class="fly-node-d">Predictions converge on expert judgement</div>
+              <div class="fly-node-k">04 &middot; Measure</div>
+              <div class="fly-node-t">Measure the improvement</div>
+              <div class="fly-node-d">Track whether the goal actually moved</div>
             </div>
             <div class="fly-center">
               <div class="fly-center-t">Moat compounds</div>
-              <div class="fly-center-d">every spin, knowledge no competitor can buy</div>
+              <div class="fly-center-d">each loop makes the system harder to copy</div>
             </div>
           </div>
         </div>
-        <div class="footnote">The flywheel compounds - each human correction today makes tomorrow's model smarter than any competitor who isn't collecting this signal</div>
       </div>
     </div>
   </div>
 
-  <!-- ══ S15 · CURRENT STATE & TARGET STATE ════════════════════════ -->
+  <!-- ══ S15 · SMART GOALS - MINESHAFT ════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="goals-slide">
+          <div class="goals-eyebrow">Data Management</div>
+          <div class="goals-heading">Business goals and knowledge goals - sending drones into a mineshaft</div>
+          <div class="goals-rule-h"></div>
+
+          <div class="goals-q-wrap">
+            <div class="goals-q-lines">
+              <div class="goals-q">Can my <span class="ghl-green">hyperspectral</span> <span class="ghl-yellow">camera</span> <span class="ghl-green">drone</span> identify ore-grade zones</div>
+              <div class="goals-q">with <span class="ghl-yellow ghl-bold">&gt;90% accuracy</span> vs lab results over the next <span class="ghl-green">three months</span>?</div>
+            </div>
+          </div>
+
+          <div class="goals-note gn-layers">Multiple data<br>layers</div>
+          <div class="goals-note gn-format">Data<br>format</div>
+          <div class="goals-note gn-condition">Condition complexity</div>
+          <div class="goals-note gn-ambitious">Ambitious!</div>
+          <div class="goals-note gn-time">Time marker</div>
+
+          <svg class="goals-arrows" viewBox="0 0 1024 576" aria-hidden="true">
+            <defs>
+              <marker id="goal-arrow" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto" markerUnits="strokeWidth">
+                <path d="M0,0 L8,4 L0,8" fill="rgba(255,255,255,0.55)"/>
+              </marker>
+            </defs>
+            <path d="M300 268 C290 286 296 296 314 304" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#goal-arrow)"/>
+            <path d="M447 244 C440 268 446 284 458 300" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#goal-arrow)"/>
+            <path d="M612 262 C600 282 588 294 574 302" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#goal-arrow)"/>
+            <path d="M300 404 C292 392 296 384 306 372" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#goal-arrow)"/>
+            <path d="M770 404 C764 392 770 384 782 372" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#goal-arrow)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S16 · TARGET STATE PREREQUISITE ═══════════════════════════ -->
   <div class="slide">
     <div class="slide-inner">
       <div class="slide-content">
         <div class="cs-slide">
-          <div class="cs-eyebrow">Data Management</div>
-          <div class="cs-heading">Current state &amp; target state</div>
+          <div class="cs-eyebrow">Prerequisite</div>
+          <div class="cs-heading">Being aware of your data &amp; target state</div>
 
           <div class="cs-divider"></div>
 
@@ -1177,35 +1248,35 @@
           <div class="cs-state-label" style="left:52px; top:462px;">Frazzled</div>
 
           <!-- ── RIGHT · NOT FRAZZLED ── -->
-          <div class="cs-ellipse cs-ellipse-big" style="left:602px; top:206px; width:372px; height:236px;"></div>
-          <div class="cs-ellipse cs-ellipse-sm"  style="left:576px; top:138px; width:138px; height:68px;"></div>
+          <div class="cs-ellipse cs-ellipse-big" style="left:586px; top:190px; width:404px; height:256px;"></div>
+          <div class="cs-ellipse cs-ellipse-sm"  style="left:570px; top:120px; width:154px; height:82px;"></div>
 
-          <div class="cs-ic cs-ic-drone cs-r-drone" style="left:618px; top:150px;">
+          <div class="cs-ic cs-ic-drone cs-r-drone" style="left:625px; top:140px;">
             <svg viewBox="0 0 44 44"><circle cx="9" cy="10" r="4"/><circle cx="35" cy="10" r="4"/><circle cx="9" cy="34" r="4"/><circle cx="35" cy="34" r="4"/><rect x="16" y="16" width="12" height="9" rx="2"/><line x1="12.5" y1="13.5" x2="17" y2="17.5"/><line x1="31.5" y1="13.5" x2="27" y2="17.5"/><line x1="12.5" y1="30.5" x2="17" y2="24.5"/><line x1="31.5" y1="30.5" x2="27" y2="24.5"/><circle cx="22" cy="32" r="2.6"/><line x1="23.8" y1="33.8" x2="26.5" y2="36.5"/></svg>
           </div>
 
-          <div class="aws-mark cs-r-aws" style="left:712px; top:222px;"><span class="aws-txt">aws</span><svg class="aws-smile" viewBox="0 0 46 14"><path d="M3 4 C 15 12 31 12 43 4" fill="none" stroke="#F3A847" stroke-width="2" stroke-linecap="round"/><path d="M38 2.4 L43.5 4 L40 7.8" fill="none" stroke="#F3A847" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="aws-mark cs-r-aws" style="left:730px; top:210px;"><span class="aws-txt">aws</span><svg class="aws-smile" viewBox="0 0 46 14"><path d="M3 4 C 15 12 31 12 43 4" fill="none" stroke="#F3A847" stroke-width="2" stroke-linecap="round"/><path d="M38 2.4 L43.5 4 L40 7.8" fill="none" stroke="#F3A847" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 
-          <div class="cs-logo-sm cs-r-django" style="left:628px; top:270px; width:18px;"><img src="logos/django.svg" alt="Django"></div>
-          <span class="cs-blob-txt cs-r-django-txt" style="left:652px; top:272px; font-size:16px;">django</span>
-          <div class="cs-ic cs-r-vault" style="left:660px; top:330px;">
+          <div class="cs-logo-sm cs-r-django" style="left:620px; top:274px; width:18px;"><img src="logos/django.svg" alt="Django"></div>
+          <span class="cs-blob-txt cs-r-django-txt" style="left:650px; top:276px; font-size:16px;">django</span>
+          <div class="cs-ic cs-r-vault" style="left:662px; top:352px;">
             <svg viewBox="0 0 32 32"><path d="M16 3l11 6.2v13.6L16 29 5 22.8V9.2z"/><circle cx="16" cy="14.5" r="2.4"/><path d="M16 16.9v3.4"/></svg>
           </div>
-          <div class="cs-ic cs-r-bucket" style="left:740px; top:300px;">
+          <div class="cs-ic cs-r-bucket" style="left:752px; top:310px;">
             <svg viewBox="0 0 32 32"><path d="M7 8h18l-1.8 18a2 2 0 0 1-2 1.8H10.8A2 2 0 0 1 8.8 26z"/><ellipse cx="16" cy="8" rx="9" ry="2.4"/></svg>
           </div>
-          <div class="cs-sagemaker cs-r-sage" style="left:786px; top:280px;">
+          <div class="cs-sagemaker cs-r-sage" style="left:810px; top:282px;">
             <svg class="cs-ic-svg" viewBox="0 0 32 32"><path d="M16 3l11 6.2v13.6L16 29 5 22.8V9.2z"/><circle cx="16" cy="16" r="2.4"/><circle cx="11" cy="13" r="1.4"/><circle cx="21" cy="19" r="1.4"/><line x1="12.2" y1="13.8" x2="14.6" y2="15.2"/><line x1="17.4" y1="16.8" x2="19.8" y2="18.2"/></svg>
             <div class="cs-sage-txt"><span>Amazon</span><span>SageMaker</span></div>
           </div>
-          <div class="cs-route53 cs-r-route" style="left:898px; top:274px;">
+          <div class="cs-route53 cs-r-route" style="left:910px; top:270px;">
             <svg viewBox="0 0 32 32"><path d="M16 3l11 6.2v13.6L16 29 5 22.8V9.2z"/></svg>
             <span class="cs-route-txt">53</span>
           </div>
-          <div class="cs-ic cs-r-search" style="left:888px; top:336px;">
+          <div class="cs-ic cs-r-search" style="left:890px; top:350px;">
             <svg viewBox="0 0 32 32"><line x1="6" y1="24" x2="6" y2="18"/><line x1="11" y1="24" x2="11" y2="13"/><line x1="16" y1="24" x2="16" y2="20"/><circle cx="21" cy="13" r="5"/><line x1="24.6" y1="16.6" x2="28" y2="20"/></svg>
           </div>
-          <div class="cs-ic cs-r-cloud" style="left:748px; top:386px;">
+          <div class="cs-ic cs-r-cloud" style="left:756px; top:400px;">
             <svg viewBox="0 0 32 32"><path d="M9 22h13a5 5 0 0 0 .8-9.94A7 7 0 0 0 8.6 12 4.7 4.7 0 0 0 9 22Z"/><circle cx="14" cy="16.5" r="3"/><line x1="16.2" y1="18.7" x2="19" y2="21.5"/></svg>
           </div>
 
@@ -1215,14 +1286,14 @@
                 <path d="M0,0 L7,3.5 L0,7" fill="rgba(255,255,255,0.5)"/>
               </marker>
             </defs>
-            <path d="M662 198 C 690 214 712 224 728 234" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
-            <path d="M730 252 C 706 258 690 264 678 270" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
-            <path d="M746 258 C 744 278 744 290 744 302" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
-            <path d="M768 254 C 790 266 798 274 806 282" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
-            <path d="M776 250 C 836 258 878 266 900 278" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
-            <path d="M772 258 C 850 282 884 312 898 336" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
-            <path d="M744 262 C 750 312 754 348 758 384" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
-            <path d="M676 296 C 674 312 674 320 674 330" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+            <path d="M666 184 C 694 198 718 209 736 222" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+            <path d="M735 248 C 704 253 675 264 650 276" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+            <path d="M760 252 C 759 274 760 292 761 310" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+            <path d="M775 248 C 790 260 807 272 824 284" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+            <path d="M784 242 C 832 246 872 258 912 276" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+            <path d="M780 256 C 830 282 866 318 892 352" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+            <path d="M764 340 C 764 362 765 382 765 400" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
+            <path d="M650 300 C 660 318 668 336 676 352" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" marker-end="url(#cs-arrow)"/>
           </svg>
 
           <div class="cs-state-label" style="left:556px; top:460px;">Not frazzled</div>
@@ -1232,46 +1303,100 @@
     </div>
   </div>
 
-  <!-- ══ S16 · SMART GOALS - MINESHAFT ════════════════════════════ -->
+  <!-- ══ S17 · FLYWHEEL STEP - UNDERSTAND ═════════════════════════ -->
   <div class="slide">
     <div class="slide-inner">
       <div class="slide-content">
-        <div class="goals-slide">
-          <div class="goals-eyebrow">Data Management</div>
-          <div class="goals-heading">Sending drones into a mineshaft - setting goals</div>
-          <div class="goals-rule-h"></div>
-
-          <div class="goals-q-wrap">
-            <div class="goals-q-lines">
-              <div class="goals-q">Can my <span class="ghl-green">hyperspectral</span> <span class="ghl-yellow">camera</span> <span class="ghl-green">drone</span> identify ore-grade zones</div>
-              <div class="goals-q">with <span class="ghl-yellow ghl-bold">&gt;90% accuracy</span> vs lab results over the next <span class="ghl-green">three months</span>?</div>
+        <div class="fly-detail">
+          <div class="fly-detail-eyebrow">Data Flywheel &middot; 02</div>
+          <div class="fly-detail-title">Use data to understand the goal</div>
+          <div class="fly-detail-rule"></div>
+          <div class="fly-detail-grid">
+            <div class="fly-detail-card">
+              <div class="fly-detail-card-k">Question</div>
+              <div class="fly-detail-card-t">What is moving?</div>
+              <div class="fly-detail-card-d">Turn the goal into the metric, event, or behaviour you can observe.</div>
+            </div>
+            <div class="fly-detail-card">
+              <div class="fly-detail-card-k">Signal</div>
+              <div class="fly-detail-card-t">Why is it moving?</div>
+              <div class="fly-detail-card-d">Find the drivers, constraints, and exceptions that explain the result.</div>
+            </div>
+            <div class="fly-detail-card">
+              <div class="fly-detail-card-k">Decision</div>
+              <div class="fly-detail-card-t">What should change?</div>
+              <div class="fly-detail-card-d">Convert the insight into a specific system or workflow change.</div>
             </div>
           </div>
-
-          <div class="goals-note gn-layers">Multiple data<br>layers</div>
-          <div class="goals-note gn-format">Data<br>format</div>
-          <div class="goals-note gn-condition">Condition complexity</div>
-          <div class="goals-note gn-ambitious">Ambitious!</div>
-          <div class="goals-note gn-time">Time marker</div>
-
-          <svg class="goals-arrows" viewBox="0 0 1024 576" aria-hidden="true">
-            <defs>
-              <marker id="goal-arrow" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto" markerUnits="strokeWidth">
-                <path d="M0,0 L8,4 L0,8" fill="rgba(255,255,255,0.55)"/>
-              </marker>
-            </defs>
-            <path d="M300 268 C290 286 296 296 314 304" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#goal-arrow)"/>
-            <path d="M447 244 C440 268 446 284 458 300" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#goal-arrow)"/>
-            <path d="M612 262 C600 282 588 294 574 302" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#goal-arrow)"/>
-            <path d="M300 404 C292 392 296 384 306 372" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#goal-arrow)"/>
-            <path d="M770 404 C764 392 770 384 782 372" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#goal-arrow)"/>
-          </svg>
+          <div class="fly-detail-note">Target state tells you what needs instrumenting: the systems, fields, behaviours, and outcomes that matter.</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ══ S16 · DATA MANAGEMENT ════════════════════════════════════ -->
+  <!-- ══ S18 · FLYWHEEL STEP - FEED BACK ══════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="fly-detail">
+          <div class="fly-detail-eyebrow">Data Flywheel &middot; 03</div>
+          <div class="fly-detail-title">Feed what you learn back into the system</div>
+          <div class="fly-detail-rule"></div>
+          <div class="fly-detail-grid">
+            <div class="fly-detail-card">
+              <div class="fly-detail-card-k">Workflow</div>
+              <div class="fly-detail-card-t">Change the operating path</div>
+              <div class="fly-detail-card-d">Put the insight where decisions are made, not in a dashboard graveyard.</div>
+            </div>
+            <div class="fly-detail-card">
+              <div class="fly-detail-card-k">Agent</div>
+              <div class="fly-detail-card-t">Update the behaviour</div>
+              <div class="fly-detail-card-d">Prompts, tools, evals, training data, and guardrails adapt from real use.</div>
+            </div>
+            <div class="fly-detail-card">
+              <div class="fly-detail-card-k">Human loop</div>
+              <div class="fly-detail-card-t">Capture corrections</div>
+              <div class="fly-detail-card-d">Overrides and edits become the labelled examples competitors cannot buy.</div>
+            </div>
+          </div>
+          <div class="fly-detail-note">The feedback loop should move the system toward the target state, not just create more data.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S19 · FLYWHEEL STEP - MEASURE ════════════════════════════ -->
+  <div class="slide">
+    <div class="slide-inner">
+      <div class="slide-content">
+        <div class="fly-detail">
+          <div class="fly-detail-eyebrow">Data Flywheel &middot; 04</div>
+          <div class="fly-detail-title">Measure whether the goal actually moved</div>
+          <div class="fly-detail-rule"></div>
+          <div class="fly-detail-grid">
+            <div class="fly-detail-card">
+              <div class="fly-detail-card-k">Baseline</div>
+              <div class="fly-detail-card-t">Know where you started</div>
+              <div class="fly-detail-card-d">Compare against the current state, not vibes or one-off anecdotes.</div>
+            </div>
+            <div class="fly-detail-card">
+              <div class="fly-detail-card-k">Impact</div>
+              <div class="fly-detail-card-t">Track the business outcome</div>
+              <div class="fly-detail-card-d">Tie model or workflow quality back to revenue, cost, risk, speed, or accuracy.</div>
+            </div>
+            <div class="fly-detail-card">
+              <div class="fly-detail-card-k">Next loop</div>
+              <div class="fly-detail-card-t">Decide what to improve next</div>
+              <div class="fly-detail-card-d">Measurement creates the next goal, not a static report.</div>
+            </div>
+          </div>
+          <div class="fly-detail-note">This is where the moat compounds: every measured loop makes the system more specific to your business.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ S20 · DATA MANAGEMENT ════════════════════════════════════ -->
   <div class="slide">
     <div class="slide-inner">
       <div class="slide-content">
@@ -1364,7 +1489,7 @@
     </div>
   </div>
 
-  <!-- ══ S16b · SECTION DIVIDER - WORKING TACTICALLY ═════════════ -->
+  <!-- ══ S20b · SECTION DIVIDER - WORKING TACTICALLY ═════════════ -->
   <div class="slide s-outside-box s-working-tactically">
     <div class="slide-inner">
       <div class="rules">
@@ -1381,7 +1506,7 @@
     </div>
   </div>
 
-  <!-- ══ S16c · HOW DO I MAKE THE RIGHT DECISIONS ══════════════════ -->
+  <!-- ══ S20c · HOW DO I MAKE THE RIGHT DECISIONS ══════════════════ -->
   <div class="slide s-decisions">
     <div class="slide-inner">
       <div class="slide-content">
@@ -1397,7 +1522,7 @@
     </div>
   </div>
 
-  <!-- ══ S17 · TECH DECISION CHART ═══════════════════════════════ -->
+  <!-- ══ S21 · TECH DECISION CHART ═══════════════════════════════ -->
   <div class="slide">
     <div class="slide-inner">
       <div class="slide-content">
@@ -1455,7 +1580,7 @@
     </div>
   </div>
 
-  <!-- ══ S18 · TEAM PITFALLS ════════════════════════════════════ -->
+  <!-- ══ S22 · TEAM PITFALLS ════════════════════════════════════ -->
   <div class="slide">
     <div class="slide-inner">
       <img class="orb" style="width:520px;top:-80px;right:-80px;mix-blend-mode:screen;" src="orb.png" alt="" />
@@ -1487,7 +1612,7 @@
     </div>
   </div>
 
-  <!-- ══ S19 · REGULATION ═══════════════════════════════════════ -->
+  <!-- ══ S23 · REGULATION ═══════════════════════════════════════ -->
   <div class="slide">
     <div class="slide-inner">
       <div class="slide-content">
@@ -1579,6 +1704,56 @@
     document.getElementById('counter').textContent = (cur + 1) + ' / ' + slides.length;
   }
   hud();
+
+  // ── Full screen presentation control ─────────────────────────
+  const fullscreenToggle = document.getElementById('fullscreen-toggle');
+  let fullscreenHideTimer;
+
+  function isFullscreen() {
+    return document.fullscreenElement || document.webkitFullscreenElement;
+  }
+
+  function syncFullscreenButton() {
+    const active = Boolean(isFullscreen());
+    fullscreenToggle.classList.toggle('is-fullscreen', active);
+    fullscreenToggle.setAttribute('aria-label', active ? 'Exit full screen' : 'Enter full screen');
+    fullscreenToggle.setAttribute('title', active ? 'Exit full screen' : 'Enter full screen');
+  }
+
+  function showFullscreenButton() {
+    fullscreenToggle.classList.add('is-visible');
+    window.clearTimeout(fullscreenHideTimer);
+    fullscreenHideTimer = window.setTimeout(() => {
+      if (document.activeElement !== fullscreenToggle && !fullscreenToggle.matches(':hover')) {
+        fullscreenToggle.classList.remove('is-visible');
+      }
+    }, 1600);
+  }
+
+  async function toggleFullscreen() {
+    try {
+      if (isFullscreen()) {
+        const exit = document.exitFullscreen || document.webkitExitFullscreen;
+        if (exit) await exit.call(document);
+      } else {
+        const enter = document.documentElement.requestFullscreen || document.documentElement.webkitRequestFullscreen;
+        if (enter) await enter.call(document.documentElement);
+      }
+    } catch (err) {
+      console.warn('Unable to toggle full screen', err);
+    }
+    syncFullscreenButton();
+    showFullscreenButton();
+  }
+
+  window.addEventListener('mousemove', showFullscreenButton);
+  window.addEventListener('touchstart', showFullscreenButton, { passive: true });
+  document.addEventListener('fullscreenchange', syncFullscreenButton);
+  document.addEventListener('webkitfullscreenchange', syncFullscreenButton);
+  fullscreenToggle.addEventListener('click', toggleFullscreen);
+  fullscreenToggle.addEventListener('focus', showFullscreenButton);
+  fullscreenToggle.addEventListener('mouseenter', showFullscreenButton);
+  syncFullscreenButton();
 
   // ── ICE score counter animation ───────────────────────────────
   function runICECounter(card) {
